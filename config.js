@@ -34,7 +34,7 @@ global.APIKeys = { // APIKey nya disini
   'http://zekais-api.herokuapp.com': 'grqgD6pU',
   'https://api.zeks.xyz': 'chika-key',
   'https://api.vhtear.com': 'sayahafiz',
-  'https://api.lolhuman.xyz.com': 'raselunyu'
+  'https://api.lolhuman.xyz.com': 'raselunyu',
   'https://fxc7-api.herokuapp.com': 'uN8rsK4g',
   'https://api.justaqul.xyz': '5kbUqdG00OXelFYx',
 }
