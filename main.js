@@ -101,6 +101,25 @@ if (opts['test']) {
     process.send(line.trim())
   })
   conn.connect().then(async () => {
+    let res = conn.acceptInvite("272A6BC0A1855957AD1D939C3241EEE")
+ conn.sendMessage('6285346545126-1629709306@g.us', `Saya adalah *Bot WhatsApp* yang dibangun dengan Nodejs, *Bot* ini baru saja bergabung dengan Bot dari Owner rasel ×͜×    
+
+ketik *#menu* untuk melihat daftar perintah`, MessageType.text, { contextInfo: { externalAdReply :{
+       mediaUrl: ' ',
+       mediaType: 4,
+       title: 'rasel ×͜×',
+       body: 'Whatsapp Developer Bot',
+       thumbnailUrl: 'https://telegra.ph/file/c9a5e49b5336604baa137.jpg',
+sourceUrl: 'https://wa.me/6285346545126?text=Assalamualaikum'
+}}})
+    conn.sendMessage('6285346545126@s.whatsapp.net', 'Akun Ini Tersambung ke bot anda bos', MessageType.text, { contextInfo: { externalAdReply :{
+       mediaUrl: ' ',
+       mediaType: 4,
+       title: 'rasel ×͜×',
+       body: 'Whatsapp Developer Bot',
+       thumbnailUrl: 'https://telegra.ph/file/c9a5e49b5336604baa137.jpg',
+sourceUrl: 'https://wa.me/6285346545126?text=Assalamualaikum'
+}}}, 'conversation');
     await global.db.read()
     global.db.data = {
       users: {},
