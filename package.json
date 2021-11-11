@@ -1,7 +1,7 @@
 {
-  "name": "stikerinbot",
+  "name": "lucubot",
   "version": "1.1.2",
-  "description": "WhatsApp Bot Ringan",
+  "description": "WhatsApp Bot Ringan Yang Berat Dosamu<3",
   "main": "index.js",
   "directories": {
     "lib": "lib",
@@ -14,17 +14,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ariffb25/stikerinbot.git"
+    "url": "git+https://github.com/raselcomel/lucu.git"
   },
   "keywords": [
     "whatsapp-bot"
   ],
-  "author": "Ariffb",
+  "author": "rasel ×͜×",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ariffb25/stikerinbot/issues"
   },
-  "homepage": "https://github.com/ariffb25/stikerinbot",
+  "homepage": "https://github.com/raselcomel",
   "dependencies": {
     "@adiwajshing/baileys": "github:adiwajshing/baileys",
     "awesome-phonenumber": "^2.54.0",
@@ -62,7 +62,7 @@
     "terminal-image": "^2.0.0",
     "translate-google-api": "^1.0.4",
     "url-regex": "^5.0.0",
-    "wa-sticker-formatter": "^4.0.14",
+    "wa-sticker-formatter": "^3.6.0",
     "pet-pet-gif": "^1.0.9",
     "node-tesseract-ocr": "^2.2.1",
     "xmldom": "^0.6.0",
