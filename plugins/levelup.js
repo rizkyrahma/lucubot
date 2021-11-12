@@ -2,7 +2,7 @@ let fetch = require('node-fetch')
 let levelling = require('../lib/levelling')
 
 let handler = async (m, { conn, usedPrefix }) => {
-  // let pp = './src/avatar_contact.png'
+  let pp = './src/avatar_contact.png'
   let who = m.sender
   let name = conn.getName(m.sender)
   let discriminator = who.substring(9, 13)
@@ -20,7 +20,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     if (!levelling.canLevelUp(user.level, user.exp, global.multiplier)) {
       let rank = 'https://telegra.ph/file/8419b02d5d285ee39375f.jpg'
         {
-          await conn.sendButtonLoc(m.chat, await (await fetch(rank)).buffer(), `Level ${name} ${user.level} (${user.exp - min}/${xp})\nKurang ${max - user.exp} lagi!`.trim(), '© XyZ666x', 'Enable autolevelup', `${usedPrefix}on autolevelup`, m)
+          await conn.sendButtonLoc(m.chat, await (await fetch(pp)).buffer(), `Level ${name} ${user.level} (${user.exp - min}/${xp})\nKurang ${max - user.exp} lagi!`.trim(), watermark, 'On Autolevelup', `${usedPrefix}on autolevelup`, m)
         }
     }
     let before = user.level * 1
@@ -28,7 +28,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     if (before !== user.level) {
       let rank = 'https://telegra.ph/file/2b16c0185469c29a0d692.jpg'
         {
-          await conn.sendButtonLoc(m.chat, await (await fetch(rank)).buffer(), `${name} Level Up!\n_${before}_ -> ${user.level}`.trim(), '© XyZ666x', 'AUTO LEVEL UP', `${usedPrefix}on autolevelup`, m)
+          await conn.sendButtonLoc(m.chat, await (await fetch(pp)).buffer(), `${name} Level Up!\n_${before}_ -> ${user.level}`.trim(), watermark, 'Claim', `${usedPrefix}claim`, m)
         }
     }
   }
