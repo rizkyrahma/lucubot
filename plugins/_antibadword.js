@@ -11,19 +11,19 @@ handler.before = function (m, { isOwner, isBotAdmin }) {
 
     if (!chat.antiBadword && !chat.isBanned && isBadword) {
         user.warning += 1
-        this.send2Button(m.chat, `*Badword terdeteksi!*
+        this.sendButton(m.chat, `*Badword terdeteksi!*
 Warning: ${user.warning} / 5
 Jika warning mencapai 5 kamu akan dibanned
 
 ketik *#on antibadword* untuk menyalakan antibadword
 ketik *#astagfirullah* atau *#maaf* untuk mengurangi warning
 
-“Barang siapa yang beriman kepada Allah dan Hari Akhir maka hendaklah dia berkata baik atau diam” (HR. al-Bukhari dan Muslim).`, '© stikerin', 'Nyalakan Antibadword', ',1 antibadword', 'Astaghfirullah', ',maaf', m)
+“Barang siapa yang beriman kepada Allah dan Hari Akhir maka hendaklah dia berkata baik atau diam” (HR. al-Bukhari dan Muslim).`, watermark, 'Astaghfirullah', ',maaf', m)
         if (user.warning >= 5) {
             user.banned = true
             if (m.isGroup) {
                 if (isBotAdmin) {
-                    this.groupSettingChange(m.chat, GroupSettingChange.messageSend, true)
+                    //this.groupSettingChange(m.chat, GroupSettingChange.messageSend, true)
                 }
             }
         }
