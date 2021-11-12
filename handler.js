@@ -334,7 +334,7 @@ module.exports = {
         }
       }
     } finally {
-      await this.updatePresence(m.chat, Presence.typing)
+      await this.updatePresence(m.chat, Presence.recording)
       //console.log(global.db.data.users[m.sender])
       let user, stats = global.db.data.stats
       if (m) {
