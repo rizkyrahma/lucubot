@@ -3,7 +3,7 @@ let fetch = require('node-fetch')
 let simple = require('./lib/simple')
 const uploadImage = require('./lib/uploadImage')
 const knights = require('knights-canvas')
-let { MessageType } = require('@adiwajshing/baileys')
+let { MessageType, Presence } = require('@adiwajshing/baileys')
 
 const isNumber = x => typeof x === 'number' && !isNaN(x)
 const delay = ms => isNumber(ms) && new Promise(resolve => setTimeout(resolve, ms))
@@ -334,6 +334,7 @@ module.exports = {
         }
       }
     } finally {
+      await this.updatePresence(m.chat, Presence.typing)
       //console.log(global.db.data.users[m.sender])
       let user, stats = global.db.data.stats
       if (m) {
