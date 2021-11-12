@@ -19,7 +19,7 @@ handler.all = async function (m, { isPrems }) {
         let json = await res.json()
         await m.reply(wait)
         // m.reply(util.format(json))
-        await this.sendFile(m.chat, json.nowm, '', '© stikerin', m)
+        await this.sendFile(m.chat, json.nowm, watermark, '© stikerin', m)
     }
 
     if (/^.*cocofun/i.test(m.text)) {
