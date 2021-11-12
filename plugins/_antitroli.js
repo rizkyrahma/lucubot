@@ -17,4 +17,4 @@
 
 //module.exports = handler
 
-//buka sendiri bloknya
+//buka sendiri bloknyaa
