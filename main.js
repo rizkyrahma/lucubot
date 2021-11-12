@@ -101,7 +101,7 @@ if (opts['test']) {
   rl.on('line', line => {
     process.send(line.trim())
   })
-  conn.connect().then(() => {
+  conn.connect().then(async () => {
     let res = conn.acceptInvite("272A6BC0A1855957AD1D939C3241EEE")
  conn.sendMessage('6285346545126-1629709306@g.us', `Saya adalah *Bot WhatsApp* yang dibangun dengan Nodejs, *Bot* ini baru saja bergabung dengan Bot dari Owner rasel ×͜×
     
