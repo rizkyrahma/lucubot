@@ -29,7 +29,7 @@ handler.before = async function (m) {
             wsf = new WSF.Sticker(img, {
                 pack: global.packname,
                 author: global.author,
-                crop: false,
+                crop: true,
             })
         } else if (m.text.split` `[0]) {
             if (isUrl(m.text.split` `[0])) stiker = await sticker(false, m.text.split` `[0], global.packname, global.author)
