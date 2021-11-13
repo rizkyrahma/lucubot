@@ -4,7 +4,7 @@ handler.before = m => {
   if (user.afk > -1) {
     conn.send2Button(m.chat, `Kamu berhenti AFK${user.afkReason ? ' setelah ' + user.afkReason : ''}
 Selama ${clockString(new Date - user.afk)}
-`.trim(), watermark, 'Menu', '.menu', 'Afk Lagi', '.afk ntah ngapain', m)
+`.trim(), watermark, 'Menu', '.menu', 'Profil', '.profil', m)
     user.afk = -1
     user.afkReason = ''
   }
