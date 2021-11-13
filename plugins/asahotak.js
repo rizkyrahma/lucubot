@@ -23,7 +23,7 @@ Bonus: ${poin} XP
         setTimeout(async () => {
             if (conn.asahotak[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, watermark, 'Asah Otak', '.asahotak', conn.asahotak[id][0])
             delete conn.asahotak[id]
-        }, timeout)
+        }, timeout, m)
     ]
 }
 handler.help = ['asahotak']
