@@ -1,5 +1,4 @@
 let handler = async (m, { conn }) => {
-  if (!text) throw 'mau nanya apa?'
   conn.reply(m.chat, `
 *Pertanyaan:* ${m.text}
 *Jawaban:* ${pickRandom(['Ya', 'YNTKTS', 'Ya ndak tau kok tanya saya', 'Mungkin iya', 'Mungkin', 'Mungkin tidak', 'Tidak', 'Tidak mungkin'])}
