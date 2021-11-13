@@ -30,7 +30,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       wsf = new WSF.Sticker(img, {
         pack: global.packname,
         author: global.author,
-        crop: true,
+        crop: false,
       })
     } else if (args[0]) {
       if (isUrl(args[0])) stiker = await sticker(false, args[0], global.packname, global.author)
