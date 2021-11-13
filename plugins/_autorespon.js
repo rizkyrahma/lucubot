@@ -32,10 +32,10 @@ handler.all = async function (m, { isBlocked }) {
 ┃╭┈─────────────⩵꙰ཱི࿐
 ┃╰──Sewa Bot!*──➤ ↶↷*
 ┃
-┃ *⸙ Gratis 12 jam *.join* link grup kamu
-┃ *⸙ Agar bot stay lebih lama di grup kamu
-┃ *⸙ Sewa bot dengan harga di bawah ini
-┃ *⸙ ુོ➪ Info untuk Gabung premium :
+┃ *⸙ Gratis 12 jam *.join* link
+┃ *⸙ Agar bot stay lebih lama
+┃ *⸙ Sewa bot dengan harga di bawah 
+┃ *⸙ ુོ➪ Info harga sewa bot
 ┃ *〲 Rp. 5k = 1 minggu Premium
 ┃ *〲 Rp. 7k = 2 minggu Premium
 ┃ *〲 Rp. 10k = 1 bulan Premium
@@ -52,7 +52,7 @@ handler.all = async function (m, { isBlocked }) {
     let reg = /(ass?alam|اَلسَّلاَمُ عَلَيْكُمْ|السلام عليکم)/i
     let isSalam = reg.exec(m.text)
     if (isSalam && !m.fromMe) {
-        await this.send2ButtonLoc(m.chat, await(await fetch(image)).buffer(), `وَعَلَيْكُمْ السَّلاَمُ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ\nWa\'alaikumussalam Warahmatullahi Wabarakatuh`.trim(), watermark, 'Menu', '.?', 'Ban', '#ban', m)
+        m.reply(`wa\'alaikumussalam`)
     }
 
     // backup db
