@@ -21,9 +21,9 @@ Bonus: ${poin} XP
         await conn.sendButton(m.chat, caption, watermark, 'Bantuan', '.ao', m),
         json, poin,
         setTimeout(async () => {
-            if (conn.asahotak[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, watermark, 'Asah Otak', '.asahotak', conn.asahotak[id][0], m)
+            if (conn.asahotak[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, watermark, 'Asah Otak', '.asahotak', conn.asahotak[id][0])
             delete conn.asahotak[id]
-        }, timeout)
+        }, timeout, m)
     ]
 }
 handler.help = ['asahotak']
