@@ -68,6 +68,7 @@ Price:
 Untuk 1 group
 
 Nb:bot ini masih terus dikembangkan.`
+global.ppkosong = 'https://i.ibb.co/Tq7d7TZ/age-hananta-495-photo.png'
 global.image = 'https://telegra.ph/file/c9a5e49b5336604baa137.jpg'//change the image
 global.thumbfoto = 'https://telegra.ph/file/c9a5e49b5336604baa137.jpg'
 global.yamete = 'https://telegra.ph/file/c9a5e49b5336604baa137.jpg' //foto first chat
