@@ -9,7 +9,8 @@ arr = txt.split`\n`
   await conn.sendFile(m.chat, 'http://sansekai.my.id/ptl_repost/'+asupan, asupan, null, m)
 }
 handler.help = ['asupan']
-handler.tags = ['fun']
+handler.tags = ['fun', 'update']
 handler.command = /^(asupan)$/i
+handler.limit = true 
 
 module.exports = handler
