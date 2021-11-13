@@ -3,20 +3,25 @@ let fetch = require("node-fetch");
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text)
     throw `
-*${usedPrefix}${command} <nama hewan>*
+╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
+┃╭┈─────────────⩵꙰ཱི࿐
+┃╰── *PILIHAN* ──➤ ↶↷
+╰•͙✩̣̣̣̣
+⁙┃〲  
+⁙┃ *⸙ dog
+⁙┃ *⸙ cat
+⁙┃ *⸙ panda
+⁙┃ *⸙ red_panda
+⁙┃ *⸙ bird
+⁙┃ *⸙ koala
+⁙┃ *⸙ fox
+⁙┃ *⸙ raccoon 
+⁙┃ *⸙ kangaroo
+⁙┃〲 
+⁙╰•°°°🕊°°°°°🕊°°°°°°🕊°°°°°°°°
+
 contoh:
-*${usedPrefix}${command} <dog>*\n
-┌〔 Opsi 〕
-├ dog
-├ cat
-├ panda
-├ fox
-├ red_panda
-├ koala
-├ birb
-├ raccoon
-├ kangaroo
-└────
+*${usedPrefix}${command} dog*
 `.trim();
   let res = await fetch(
     API("https://some-random-api.ml", "/animal/" + text, {})
