@@ -14,7 +14,7 @@ let handler = async (m, { args, usedPrefix, command }) => {
 ⁙┃〲 
 ⁙╰•°°°🕊°°°°°🕊°°°°°°🕊°°°°°°°°
 
-contoh:
+contoh: >•< 
 ${usedPrefix + command} latinkejawa selamat pagi
 ${usedPrefix + command} latinkesunda selamat pagi
     `.trim()
