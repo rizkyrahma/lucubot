@@ -90,7 +90,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
         global.dfail('rowner', m, conn)
         throw false
       }
-      global.opts['self'] = !isEnable
+      global.opts['nyimak'] = !isEnable
       break
     case 'publik':
     case 'public':
