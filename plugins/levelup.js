@@ -2,7 +2,7 @@ let fetch = require('node-fetch')
 let levelling = require('../lib/levelling')
 
 let handler = async (m, { conn, usedPrefix }) => {
-  let pp = './src/avatar_contact.png'
+  let pp = ppkosong
   let who = m.sender
   let name = conn.getName(m.sender)
   let discriminator = who.substring(9, 13)
