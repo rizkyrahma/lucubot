@@ -9,6 +9,10 @@ let handler = async (m, { conn, text, command }) => {
     let res = await fetch(global.API('xteam', '/attp', { file: '', text: teks }))
     if (!res.ok) throw eror
     conn.sendFile(m.chat, global.API('xteam', '/attp', { file: '', text: teks }), 'attp.webp', '', m, false, { asSticker: true })
+  {
+    global.packname,
+    global.author
+    }
   }
 
   if (/2$/i.test(command)) {
