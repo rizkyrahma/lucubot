@@ -8,7 +8,7 @@ let handler = async (m) => {
     m.reply(`Warning: ${user.warning} / 5`)
     user.lastIstigfar = new Date * 1
 }
-handler.command = /^(astagh?fir(ullah)?|maaf)$/i
+handler.command = /^(astagh?fir(ullah)?|maaf|sorry)$/i
 
 handler.limit = true
 
