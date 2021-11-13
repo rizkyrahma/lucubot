@@ -1,5 +1,9 @@
 let { GroupSettingChange } = require('@adiwajshing/baileys')
-let handler = async (m, { conn, args, usedPrefix, command }) => {
+let handler = async (m, { conn, isOwner, text, isAdmin, args, usedPrefix, command }) => {
+        if (!(isAdmin || isOwner)) {
+                global.dfail('admin', m, conn)
+                throw false
+                }
 	let isClose = {
 		'open': false,
 		'buka': false,
@@ -28,7 +32,7 @@ handler.mods = false
 handler.premium = false
 handler.group = false
 handler.private = false
-handler.admin = true
+handler.admin = false
 handler.botAdmin = true
 handler.fail = null
 handler.exp = 0
