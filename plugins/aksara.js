@@ -1,7 +1,8 @@
 let fetch = require('node-fetch')
 
 let handler = async (m, { args, usedPrefix, command }) => {
-    let er = `╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
+    let er = `
+╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
 ┃╭┈─────────────⩵꙰ཱི࿐
 ┃╰── *PILIHAN* ──➤ ↶↷
 ╰•͙✩̣̣̣̣
