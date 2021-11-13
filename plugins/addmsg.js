@@ -1,5 +1,9 @@
 let { WAMessageProto } = require('@adiwajshing/baileys')
-let handler = async (m, { command, usedPrefix, text }) => {
+let handler = async (m, { command, usedPrefix, isOwner, text, isPremium }) => {
+    if (!(isPremium || isOwner)) {
+                global.dfail('premium', m, conn)
+                throw false
+                }
     let M = WAMessageProto.WebMessageInfo
     let which = command.replace(/add/i, '')
     if (!m.quoted) throw 'balas pesannya!'
