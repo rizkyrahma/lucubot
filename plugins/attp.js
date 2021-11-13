@@ -10,8 +10,8 @@ let handler = async (m, { conn, text, command }) => {
     if (!res.ok) throw eror
     conn.sendFile(m.chat, global.API('xteam', '/attp', { file: '', text: teks }), 'attp.webp', '', m, false, { asSticker: true })
   {
-    global.packname,
-    global.author
+    'tes',
+    'rasel'
     }
   }
 
