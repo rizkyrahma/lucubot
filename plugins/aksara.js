@@ -1,13 +1,18 @@
 let fetch = require('node-fetch')
 
 let handler = async (m, { args, usedPrefix, command }) => {
-    let er = `
-┌〔 Pilihan 〕
-├ latinkejawa
-├ latinkesunda
-├ jawakelatin
-├ sundakelatin
-└────
+    let er = `╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
+┃╭┈─────────────⩵꙰ཱི࿐
+┃╰── *PILIHAN* ──➤ ↶↷
+╰•͙✩̣̣̣̣
+  
+⁙┃〲  
+⁙┃ *⸙ latinkejawa
+⁙┃ *⸙ jawakelatin 
+⁙┃ *⸙ latinkesunda
+⁙┃ *⸙ sundakelatin
+⁙┃〲 
+⁙╰•°°°🕊°°°°°🕊°°°°°°🕊°°°°°°°°
 
 contoh:
 ${usedPrefix + command} latinkejawa selamat pagi
@@ -33,7 +38,7 @@ ${usedPrefix + command} latinkesunda selamat pagi
 }
 handler.help = ['aksara'].map(v => v + ' <opsi> <teks>')
 handler.tags = ['tools']
-handler.command = /^aksara$/i
+handler.command = /^aksara|aksa|aks$/i
 
 handler.limit = true
 
