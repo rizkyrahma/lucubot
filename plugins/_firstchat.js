@@ -14,7 +14,7 @@ handler.all = async function (m) {
     await conn.send2ButtonLoc(m.chat, await(await fetch(image)).buffer(), `
 Hai, ${ucapan()}
 
-${user.banned ? 'kamu dibanned' : `Saya Bot Whatsapp.\nHarap tidak spam/telpon/minta save ke nomor ini.\nAda yang bisa saya bantu?\nKalo Button Gabisa, Manual Aja Dengan Mengetik\n*#menu*\nMau chat sama simi? ketik\n*#on simi*`}
+${user.banned ? 'kamu dibanned' : `Saya Adalah Bot Whatsapp Yang Membantu Kamu Menyelesaikan Sesuatu Seperti Membuat Stiker Dan Lainnya.\nAda Yang Bisa Saya Bantu?\n\nKalo Button Gabisa, Manual Aja Dengan Mengetik\n*#menu*\n\nMau Chat Sama Simi? ketik\n*#on simi*`}
 `.trim(), watermark, user.banned ? 'Pemilik Bot' : 'Menu', user.banned ? ',owner' : ',?', 'Rules', '.rules', m)
     user.pc = new Date * 1
 }
@@ -22,18 +22,18 @@ ${user.banned ? 'kamu dibanned' : `Saya Bot Whatsapp.\nHarap tidak spam/telpon/m
 module.exports = handler
 function ucapan() {
     const time = moment.tz('Asia/Jakarta').format('HH')
-    res = "Selamat dinihari🌃"
+    res = "Selamat dinihari🌌"
     if (time >= 4) {
         res = "Selamat pagi🌄"
     }
     if (time > 10) {
-        res = "Selamat siang🏜"
+        res = "Selamat siang🌇"
     }
     if (time >= 15) {
-        res = "Selamat sore🌇"
+        res = "Selamat sore🌅"
     }
     if (time >= 18) {
-        res = "Selamat malam🌌"
+        res = "Selamat malam🌆"
     }
     return res
 }
