@@ -14,7 +14,7 @@ handler.all = async function (m) {
     await conn.send2ButtonLoc(m.chat, await(await fetch(image)).buffer(), `
 Hai, ${ucapan()}
 
-${user.banned ? 'kamu dibanned' : `Saya adalah ${name}, salah satu Bot Whatsapp. harap tidak spam/telpon/minta save ke nomor ini. Ada yang bisa saya bantu?\nKalo Button Gabisa, Manual Aja Dengan Mengetik *#menu*\nMau chat sama simi? ketik *#on simi*`}
+${user.banned ? 'kamu dibanned' : `Saya Bot Whatsapp.\nHarap tidak spam/telpon/minta save ke nomor ini.\nAda yang bisa saya bantu?\nKalo Button Gabisa, Manual Aja Dengan Mengetik\n*#menu*\nMau chat sama simi? ketik\n*#on simi*`}
 `.trim(), watermark, user.banned ? 'Pemilik Bot' : 'Menu', user.banned ? ',owner' : ',?', 'Rules', '.rules', m)
     user.pc = new Date * 1
 }
