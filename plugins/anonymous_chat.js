@@ -25,10 +25,10 @@ async function handler(m, { command, usedPrefix }) {
             }
             let room = Object.values(this.anonymous).find(room => room.state === 'WAITING' && !room.check(m.sender))
             if (room) {
-                await this.sendButton(room.a, '_Partner ditemukan!_', watermark, 'Next', `halo`)
+                await this.sendButton(room.a, '_Partner ditemukan!_', watermark, 'Halo', ``)
                 room.b = m.sender
                 room.state = 'CHATTING'
-                await this.sendButton(room.b, '_Partner ditemukan!_', watermark, 'Next', `hai`)
+                await this.sendButton(room.b, '_Partner ditemukan!_', watermark, 'Hai', ``)
             } else {
                 let id = + new Date
                 this.anonymous[id] = {
