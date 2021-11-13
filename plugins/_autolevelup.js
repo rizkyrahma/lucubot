@@ -7,7 +7,7 @@ handler.before = async function (m) {
         let users = Object.entries(global.db.data.users).map(([key, value]) => {
                 return { ...value, jid: key }
         })
-        let pp = './src/avatar_contact.png'
+        let pp = global.ppkosong //kalo ppkosong doang emror 🗿
         let who = m.sender
         let discriminator = who.substring(9, 13)
         let sortedLevel = users.map(toNumber('level')).sort(sort('level'))
@@ -24,7 +24,7 @@ handler.before = async function (m) {
                 while (levelling.canLevelUp(user.level, user.exp, global.multiplier)) user.level++
 
                 if (before !== user.level) {
-                        let rank = 'https://telegra.ph/file/2b16c0185469c29a0d692.jpg'
+                        let rank = 'https://telegra.ph/file/2b16c0185469c29a0d692.jpg' //ini gk guna kek hidup lu 🗿
                         {
                                         await this.sendButtonLoc(m.chat, `Level Up!\n_${before}_ -> ${user.level}`.trim(), await (await fetch(pp)).buffer(), watermark, 'Daily', ',daily', m)
                                 }
