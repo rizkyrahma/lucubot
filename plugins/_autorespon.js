@@ -13,9 +13,9 @@ handler.all = async function (m, { isBlocked }) {
     // ketika ditag
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
-            await this.send2ButtonLoc(m.chat, await (await fetch(image)).buffer(),
-                isBanned ? 'stikerin tidak aktif' : banned ? 'kamu dibanned' : 'stikerin disini',
-                '© stikerin',
+            await this.send2ButtonLoc(m.chat, await(await fetch(image)).buffer(),
+                isBanned ? 'apa?' : banned ? 'lu dibanned tod<3' : 'apa su<3', 
+                watermark,
                 isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
                 m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Donasi',
