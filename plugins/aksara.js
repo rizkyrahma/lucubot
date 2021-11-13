@@ -5,7 +5,6 @@ let handler = async (m, { args, usedPrefix, command }) => {
 ┃╭┈─────────────⩵꙰ཱི࿐
 ┃╰── *PILIHAN* ──➤ ↶↷
 ╰•͙✩̣̣̣̣
-  
 ⁙┃〲  
 ⁙┃ *⸙ latinkejawa
 ⁙┃ *⸙ jawakelatin 
