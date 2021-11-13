@@ -13,7 +13,7 @@ handler.all = async function (m, { isBlocked }) {
     // ketika ditag
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
-            await this.send2ButtonLoc(m.chat, await(await fetch(image)).buffer(),
+            await this.send2Button(m.chat, 
                 isBanned ? 'apa?' : banned ? 'lu dibanned tod<3' : 'apa su<3', 
                 watermark,
                 isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu',
