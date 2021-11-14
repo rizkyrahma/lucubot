@@ -9,7 +9,7 @@ let handler = async (m, { conn }) => {
 }
 handler.help = ['debounce' + (process.send ? '' : ' (Tidak Bekerja)')]
 handler.tags = ['host']
-handler.command = /^debounce$/i
+handler.command = /^deb(ounce)?$/i
 handler.owner = true
 handler.mods = false
 handler.premium = false
