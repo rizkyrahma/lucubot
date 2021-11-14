@@ -22,7 +22,7 @@ ${members > 1 ? `${members - reads.length - deliveries.length} tersisa` : ''}
 handler.help = ['getsider']
 handler.tags = ['group']
 
-handler.command = /^getsider$/
+handler.command = /^(get)?sider$/
 
 module.exports = handler
 
