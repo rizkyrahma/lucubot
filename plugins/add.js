@@ -1,5 +1,9 @@
 let fetch = require('node-fetch')
-let handler = async (m, { conn, text, participants, usedPrefix, command }) => {
+let handler = async (m, { conn, isOwner, isAdmin, text, participants, usedPrefix, command }) => {
+  if (!(isAdmin || isOwner)) {
+                global.dfail('admin', m, conn)
+                throw false
+                }
   if (!text) throw `uhm.. nomornya mana?\ncontoh:\n\n${usedPrefix + command + ' ' + global.owner[0]}`
   let _participants = participants.map(user => user.jid)
   let users = (await Promise.all(
@@ -31,7 +35,7 @@ let handler = async (m, { conn, text, participants, usedPrefix, command }) => {
     } : {})
   }
 }
-handler.help = ['add', '+'].map(v => v + ' nomor,nomor')
+handler.help = ['add'].map(v => v + ' nomor,nomor')
 handler.tags = ['admin']
 handler.command = /^(add|\+)$/i
 handler.owner = false
@@ -40,7 +44,7 @@ handler.premium = false
 handler.group = true
 handler.private = false
 
-handler.admin = true
+handler.admin = false
 handler.botAdmin = true
 
 handler.fail = null
