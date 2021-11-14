@@ -15,7 +15,7 @@ conn.groupRemove(m.chat, [usr]); return;
 }
 handler.help = ['kick'].map(v => v + ' @user')
 handler.tags = ['admin']
-handler.command = /^(kic?k|\-)$/i
+handler.command = /^(k(ic?k)?|\-)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
