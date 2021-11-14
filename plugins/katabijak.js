@@ -2,16 +2,21 @@ const { quotes } = require('../lib/scrape')
 let handler = async (m, { command, args, usedPrefix }) => {
     let er = `contoh:\n${usedPrefix + command} cinta
 
-┌〔 Opsi 〕
-├ cinta
-├ rindu
-├ mimpi
-├ sendiri
-├ sabar
-├ kesedihan
-├ pernikahan
-├ kemerdekaan
-└────`.trim()
+╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
+┃╭┈─────────────⩵꙰ཱི࿐
+┃╰── *OPSI* ──➤ ↶↷
+╰•͙✩̣̣̣̣
+⁙┃〲*⸙ cinta  
+⁙┃〲*⸙ rindu
+⁙┃〲*⸙ mimpi
+⁙┃〲*⸙ sabar
+⁙┃〲*⸙ sendiri
+⁙┃〲*⸙ kesedihan 
+⁙┃〲*⸙ pernikahan 
+⁙┃〲*⸙ kemerdekaan 
+⁙┃〲 
+⁙╰•°°°🕊°°°°°🕊°°°°°°🕊°°°°°°°°
+`.trim()
     if (!args[0]) throw er
     switch (args[0].toLowerCase()) {
         case 'cinta':
