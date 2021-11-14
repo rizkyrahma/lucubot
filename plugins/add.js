@@ -4,6 +4,7 @@ let handler = async (m, { conn, text, participants, usedPrefix, command }) => {
 if(m.quoted.sender === ownerGroup || m.quoted.sender === conn.user.jid) return;
 let usr = m.quoted.sender;
 conn.groupAdd(m.chat, [usr]); return;
+  }
   if (!text) throw `uhm.. nomornya mana?\ncontoh:\n\n${usedPrefix + command + ' ' + global.owner[0]}`
   let _participants = participants.map(user => user.jid)
   let users = (await Promise.all(
