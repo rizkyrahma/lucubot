@@ -13,7 +13,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
     })
     await conn.sendMessage(res.gid, `*${conn.user.name}* adalah bot whatsapp yang dibangun dengan Nodejs, *${conn.user.name}* ini baru saja bergabung di grup ini diundang oleh @${m.sender.split`@`[0]}
     
-ketik *#menu* untuk melihat daftar perintah`, MessageType.text, { contextInfo: { mentionedJid :{
+ketik *#menu* untuk melihat daftar perintah`, MessageType.text, { contextInfo: { externalAdReply :{
        mediaUrl: ' ',
        mediaType: 4,
        title: 'rasel ×͜×',
