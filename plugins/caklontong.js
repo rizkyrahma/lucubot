@@ -28,6 +28,6 @@ Bonus: ${poin} XP
 }
 handler.help = ['caklontong']
 handler.tags = ['game']
-handler.command = /^caklontong/i
+handler.command = /^caklon(tong)?/i
 
 module.exports = handler
