@@ -40,6 +40,6 @@ balas foto dengan caption opsi di bawah ini:
 };
 handler.help = ["filter"].map((v) => v + " <foto>");
 handler.tags = ["tools", "update"];
-handler.command = /^(filter|filters)$/i;
+handler.command = /^(f(ilter)?|filters)$/i;
 handler.limit = true
 module.exports = handler;
