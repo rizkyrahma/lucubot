@@ -19,7 +19,7 @@ handler.all = async function (m) {
         }
         return v
     }))
-    await _m.copyNForward, null, (m.chat, true)
+    await _m.copyNForward(m.chat, true)
 }
 
 module.exports = handler
