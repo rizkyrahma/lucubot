@@ -6,7 +6,7 @@ ${usedPrefix + command} abu-daud 1
 
 ╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
 ┃╭┈─────────────⩵꙰ཱི࿐
-┃╰── *PILIHAN TERSEDIA* ──➤ ↶↷
+┃╰── *PILIHAN* ──➤ ↶↷
 ╰•͙✩̣̣̣̣
 ⁙┃〲  
 ⁙┃ ુོ➪ abu-daud
