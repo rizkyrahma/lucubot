@@ -8,7 +8,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   let json = await res.json()
   if (!json.status) throw json
   await m.reply(wait)
-  await conn.sendFile(m.chat, json.data.sd.url, '', `HD: ${json.data.hd.url}\nUkuran: ${json.data.hd.size}\n\n© stikerin`, m)
+  await conn.sendFile(m.chat, json.data.sd.url, '', watermark, m)
 }
 handler.help = ['fb'].map(v => v + ' <url>')
 handler.tags = ['downloader']
@@ -18,3 +18,4 @@ handler.command = /^f((b|acebook)(dl|download)?(er)?)$/i
 handler.limit = true
 
 module.exports = handler
+//fitur ini emror
