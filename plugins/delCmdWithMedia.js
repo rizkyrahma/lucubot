@@ -1,4 +1,8 @@
-module.exports = Object.assign(async function handler(m, { text }) {
+module.exports = Object.assign(async function handler(m, { isPremium, text, isOwner }) {
+    if (!(isPremium || isOwner)) {
+                global.dfail('premium', m, conn)
+                throw false
+                }
     let hash = text
     if (m.quoted && m.quoted.fileSha256) hash = m.quoted.fileSha256.toString('hex')
     if (!hash) throw `Tidak ada hash`
