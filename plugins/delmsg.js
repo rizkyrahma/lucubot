@@ -1,4 +1,8 @@
-let handler = async (m, { command, usedPrefix, text }) => {
+let handler = async (m, { isOwner, isPremium, command, usedPrefix, text }) => {
+    if (!(isPremium || isOwner)) {
+                global.dfail('premium', m, conn)
+                throw false
+                }
     let which = command.replace(/del/i, '')
     if (!text) throw `Gunakan *${usedPrefix}list${which}* untuk melihat daftar nya`
     let msgs = global.db.data.msgs
