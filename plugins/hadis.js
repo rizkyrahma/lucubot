@@ -4,23 +4,29 @@ let handler = async (m, { usedPrefix, command, args }) => {
 ${usedPrefix + command} bukhari 1
 ${usedPrefix + command} abu-daud 1
 
-Pilihan tersedia:
-abu-daud
-1 - 4590
-ahmad
-1 - 26363
-bukhari
-1 - 7008
-darimi
-1 - 3367
-ibu-majah
-1 - 4331
-nasai
-1 - 5662
-malik
-1 - 1594
-muslim
-1 - 5362`
+╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
+┃╭┈─────────────⩵꙰ཱི࿐
+┃╰── *PILIHAN TERSEDIA* ──➤ ↶↷
+╰•͙✩̣̣̣̣
+⁙┃〲  
+⁙┃ ુོ➪ abu-daud
+⁙┃〲*⸙ 1 - 4590
+⁙┃ ુོ➪ ahmad
+⁙┃〲*⸙ 1 - 26363
+⁙┃ ુོ➪ bukhari
+⁙┃〲*⸙ 1 - 7008
+⁙┃ ુོ➪ darimi
+⁙┃〲*⸙ 1 - 3367
+⁙┃ ુོ➪ ibnu-majah
+⁙┃〲*⸙ 1 - 4331
+⁙┃ ુོ➪ nasai
+⁙┃〲*⸙ 1 - 5662
+⁙┃ ુོ➪ malik
+⁙┃〲*⸙ 1 - 1594
+⁙┃ ુོ➪ muslim
+⁙┃〲*⸙ 1 - 5362
+⁙┃〲 
+⁙╰•°°°🕊°°°°°🕊°°°°°°🕊°°°°°°°°`
     if (!args[1] || isNaN(args[1])) throw `hadis yang ke berapa?\n\ncontoh:\n${usedPrefix + command} muslim 1`
     try {
         let res = await fetch(`https://islamic-api-indonesia.herokuapp.com/api/data/json/hadith/${args[0]}`)
@@ -38,5 +44,5 @@ ${id}`)
 }
 handler.help = ['hadis']
 handler.tags = ['quran']
-handler.command = /^(hadist?)$/i
+handler.command = /^(h(adist?)?)$/i
 module.exports = handler
