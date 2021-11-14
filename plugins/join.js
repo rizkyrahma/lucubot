@@ -11,14 +11,14 @@ let handler = async (m, { conn, text, usedPrefix }) => {
         if (now < global.db.data.chats[res.gid].expired) global.db.data.chats[res.gid].expired += jumlahHari
         else global.db.data.chats[res.gid].expired = now + jumlahHari
     })
-    await conn.sendMessage(res.gid, `Halo *${conn.user.name}*, saya adalah bot whatsapp yang dibangun dengan Nodejs, Saya baru saja bergabung di grup ini diundang oleh @${m.sender.split`@`[0]}
+    await conn.sendMessage(res.gid, `Halo, saya adalah bot whatsapp yang dibangun dengan Nodejs, Saya baru saja bergabung di grup ini diundang oleh @${m.sender.split`@`[0]}
     
 ketik *#menu* untuk melihat daftar perintah`, MessageType.text, { contextInfo: { externalAdReply :{
        mediaUrl: ' ',
        mediaType: 4,
        title: 'rasel ×͜×',
        body: 'Whatsapp Developer Bot',
-       thumbnailUrl: image,
+       thumbnailUrl: 'https://telegra.ph/file/c9a5e49b5336604baa137.jpg', //ganti pake global.image jg bisa, knp gk gua pake krena kalo ada yg nyolong sc gua ketaun:v
 sourceUrl: 'https://wa.me/6285346545126?text=Assalamualaikum'
 }}})
 }
