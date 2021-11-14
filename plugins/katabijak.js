@@ -33,7 +33,7 @@ let handler = async (m, { command, args, usedPrefix }) => {
                 let random = Math.floor(Math.random() * json.data.length)
                 let hasil = json.data[random]
                 let { author, bio, quote } = hasil
-                await conn.send2Button(m.chat, `“${quote}”`, `${author} - ${bio}`, `KATA BIJAK ${args[0].toUpperCase()}`, `${usedPrefix + command} ${args[0]}`, `RANDOM`, `${usedPrefix + command} ${pickRandom(['rindu', 'mimpi', 'sendiri', 'sabar', 'kesedihan', 'pernikahan', 'kemerdekaan'])}`, m)
+                await conn.send2ButtonLoc(m.chat, await(await fetch(image)).buffer(), `“${quote}”`, `${author} - ${bio}`, `KATA BIJAK ${args[0].toUpperCase()}`, `${usedPrefix + command} ${args[0]}`, `RANDOM`, `${usedPrefix + command} ${pickRandom(['rindu', 'mimpi', 'sendiri', 'sabar', 'kesedihan', 'pernikahan', 'kemerdekaan'])}`, m)
             })
             break
         default:
