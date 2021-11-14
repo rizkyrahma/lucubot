@@ -5,14 +5,14 @@ let handler = async (m, { conn }) => {
 ┃
 ┃ *Terblokir : ↷↷*
 ┃
-┃ Total : ${blocked.length} Pengguna
-${blocked.map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join`\n`}
+┃ *⸙ ુོ➪ Total : ${blocked.length} Pengguna
+${blocked.map((v, i) => `┃ *〲 ${i + 1}. @${v.split`@`[0]}`).join`\n`}
 ┃ *─★‧ﾟ
 ╰━━━━━━━━⸙`.trim(), m, { contextInfo: { mentionedJid: blocked } })
 }
 handler.help = ['blocklist']
 handler.tags = ['owner']
-handler.command = /^listbloc?k|bloc?klist|daftarbloc?k|blocks$/i
+handler.command = /^list?bloc?k|bloc?klist?|daftarbloc?k|blocks$/i
 handler.owner = true
 
 module.exports = handler
