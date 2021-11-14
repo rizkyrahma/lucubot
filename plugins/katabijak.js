@@ -1,4 +1,5 @@
 const { quotes } = require('../lib/scrape')
+let fetch = require ('node-fetch')
 let handler = async (m, { command, args, usedPrefix }) => {
     let er = `contoh:\n${usedPrefix + command} cinta
 
