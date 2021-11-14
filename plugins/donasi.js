@@ -2,10 +2,10 @@ let fetch = require('node-fetch')
 let handler = async (m, { conn }) => await conn.sendButtonLoc(m.chat, await (await fetch(fla + 'donasi')).buffer(), `
 ╭━━•›ꪶ ۪۪⸙ ━ ━ ━ ━ ꪶ ۪۪⸙‹•━━╮ 
 ┃╭┈─────────────⩵꙰ཱི࿐ 
-┃╰──*DONATE*──➤ ↶↷* 
+┃╰── *DONATE* ──➤ ↶↷* 
 ╰•͙✩̣̣
-⁙┃ ુོ DANA : 6285346545126
-⁙┃ ુོ OVO    : 6285346545126
+⁙┃ ુོ DANA  : 6285346545126
+⁙┃ ુོ OVO   : 6285346545126
 ⁙┃ ુོ Gopay : 6285346545126
 ⁙┃ ુོ PULSA : 6285346545126
 ⁙┃ ુོ https://saweria.co/raselganz
