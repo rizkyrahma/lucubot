@@ -46,3 +46,4 @@ handler.help = ['hadis']
 handler.tags = ['quran']
 handler.command = /^(h(adist?)?)$/i
 module.exports = handler
+//hm
