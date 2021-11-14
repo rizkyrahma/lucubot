@@ -10,7 +10,7 @@ let handler = async (m, { conn, text }) => {
 }
 handler.help = ['ikhlasin']
 handler.tags = ['jadian']
-handler.command = /^(ikhlasin|ikhlas)$/i
+handler.command = /^(ikh?lasin|ikh?las)$/i
 handler.mods = false
 handler.premium = false
 handler.group = true
