@@ -24,7 +24,7 @@ sourceUrl: 'https://wa.me/6285346545126?text=Assalamualaikum'
 }
 handler.help = ['join(-5 limit)']
 handler.tags = ['main']
-handler.command = /^join$/i
+handler.command = /^j(oin)?$/i
 
 handler.limit = 5
 
