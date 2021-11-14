@@ -1,5 +1,5 @@
 let handler = async (m, { conn, usedPrefix, command }) => {
-  await conn.sendButton(m.chat, `“${pickRandom(global.bucin)}”`, '© stikerin', 'Bucin', `${usedPrefix + command}`)
+  await conn.sendButton(m.chat, `“${pickRandom(global.bucin)}”`, watermark, 'Bucin', `${usedPrefix + command}`)
 }
 handler.help = ['bucin']
 handler.tags = ['quotes']
@@ -142,5 +142,6 @@ global.bucin = [
   "Yang penting itu kebahagiaan kamu, aku sih gak penting..",
   "Cuma satu keinginanku, dicintai olehmu..",
   "Aku tanpamu bagaikan ambulans tanpa wiuw wiuw wiuw.",
-  "Cukup antartika aja yang jauh. Antarkita jangan."
+  "Cukup antartika aja yang jauh. Antarkita jangan.",
+  "Jika kamu punya kata kata bucin dan ingin memasukkan ke database bot hubungi *#owner*"
 ]
