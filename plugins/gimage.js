@@ -8,7 +8,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
   let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
   if (!url) throw 'Image tidak ditemukan'
-  conn.sendFile(m.chat, url, 'gimage', watermark, m, 0, { thumbnail: await (await fetch(thumbfoto)).buffer() })
+  conn.sendFile(m.chat, url, 'gimage', watermark, m, 0, { thumbnail: await (await fetch(url)).buffer() })
 }
 handler.help = ['gimage <pencarian>', 'image <pencarian>']
 handler.tags = ['internet']
