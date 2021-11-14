@@ -16,10 +16,10 @@ Album: ${album}
 Ukuran File: ${filesize}
 Durasi: ${duration}
 
-© stikerin
+\`\`\`Tunggu file sedang dkirim mungkin butuh beberapa menit\`\`\`
     `.trim()
 
-    conn.sendFile(m.chat, img_url, 'eror.jpg', pesan, m, 0, { thumbnail: await (await fetch(img_url)).buffer() })
+    conn.sendFile(m.chat, img_url, 'eror.jpg', pesan, m, 0, { thumbnail: await (await fetch(thumbfoto)).buffer() })
     conn.sendFile(m.chat, mp3_url, 'error.mp3', '', m, 0, { asDocument: global.db.data.chats[m.chat].useDocument, mimetype: 'audio/mp4' })
 
 }
