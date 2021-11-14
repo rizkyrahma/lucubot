@@ -6,7 +6,7 @@ ${usedPrefix + command} abu-daud 1
 
 ╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
 ┃╭┈─────────────⩵꙰ཱི࿐
-┃╰── *PILIHAN* ──➤ ↶↷
+┃╰── *OPSI* ──➤ ↶↷
 ╰•͙✩̣̣̣̣
 ⁙┃〲  
 ⁙┃ ુོ➪ abu-daud
@@ -42,7 +42,7 @@ ${id}`)
         throw `Tidak ditemukan!`
     }
 }
-handler.help = ['hadis']
+handler.help = ['hadis <nama_hadis> <nomor>']
 handler.tags = ['quran']
 handler.command = /^(h(adist?)?)$/i
 module.exports = handler
