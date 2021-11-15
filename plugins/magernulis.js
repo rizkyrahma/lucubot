@@ -6,7 +6,7 @@ let handler = async (m, { command, conn, text }) => {
     nama: conn.getName(m.sender),
     kelas: ' '
   }, 'APIKEY')
-  await conn.sendFile(m.chat, url, 'nulis.jpg', '', m, false, { thumbnail: await (await fetch(url)).buffer() })
+  await conn.sendFile(m.chat, url, 'nulis.jpg', watermark, m, false, { thumbnail: await (await fetch(thumbfoto)).buffer() })
 }
 handler.help = new Array(6).fill('magernulis').map((v, i) => v + (i + 1) + ' <teks>')
 handler.tags = ['nulis']
