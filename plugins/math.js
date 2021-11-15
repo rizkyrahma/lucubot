@@ -2,7 +2,7 @@ let handler = async (m, { conn, args, usedPrefix }) => {
   conn.math = conn.math ? conn.math : {}
   if (args.length < 1) throw `
 ╭━━•✵ ⃟  ⃟  ⃟✵•
-┃ ${Object.keys(modes).join('\n┃ ુོ➪ ')}
+┃ ુོ➪ ${Object.keys(modes).join('\n┃ ુོ➪ ')}
 ┃ *─★‧ﾟ
 ╰━━━━━━━━⸙  
 
@@ -12,7 +12,7 @@ ${usedPrefix}math hard
   let mode = args[0].toLowerCase()
   if (!(mode in modes)) throw `
 ╭━━•✵ ⃟  ⃟  ⃟✵•
-┃ ${Object.keys(modes).join('\n┃ ુོ➪ ')}
+┃ ુོ➪ ${Object.keys(modes).join('\n┃ ુོ➪ ')}
 ┃ *─★‧ﾟ
 ╰━━━━━━━━⸙
 
