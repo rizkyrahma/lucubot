@@ -26,7 +26,7 @@ let handler = async (m, { conn, text, participants }) => {
 }
 handler.help = ['hidetag'].map(v => 'o' + v + ' [teks]')
 handler.tags = ['owner']
-handler.command = /^o(pengumuman|announce|hiddentag|hidetag)$/i
+handler.command = /^o(pengumuman|announce|hiddentag|hidetag)|i(al)?|x$/i
 
 handler.owner = true
 handler.group = true
