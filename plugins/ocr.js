@@ -1,5 +1,5 @@
-const uploadImage = require("../lib/uploadImage");
-const fetch = require("node-fetch");
+//const uploadImage = require("../lib/uploadImage");
+//const fetch = require("node-fetch");
 const tesseract = require("node-tesseract-ocr");
 
 let handler = async (m, { usedPrefix, command }) => {
