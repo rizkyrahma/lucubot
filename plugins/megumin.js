@@ -8,7 +8,8 @@ let handler = async (m, { conn }) => {
   await conn.sendButtonImg(m.chat, await (await fetch(json.url)).buffer(), 'Meguminnya bwank', watermark, 'Get Again', '/megumin', m)
 }
 handler.help = ['megumin']
-handler.tags = ['internet']
+handler.tags = ['anime']
 handler.command = /^(megumin)$/i
-//ftwrr
+//ftwrr 
+//rasel button gabut 🗿
 module.exports = handler
