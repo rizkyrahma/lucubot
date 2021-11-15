@@ -1,5 +1,5 @@
 let handler = async m => m.reply(`
-*Grup Official LUCU-BOT*
+*Grup Official Forum Bot*
 
 https://chat.whatsapp.com/CUCsW6BWfmJLJwJgPQIaKM
 
@@ -7,6 +7,6 @@ https://chat.whatsapp.com/CUCsW6BWfmJLJwJgPQIaKM
 `.trim())
 handler.help = ['groupbot']
 handler.tags = ['info', 'grup']
-handler.command = /^g(c|ro?up)bot$/i
+handler.command = /^(g(c|ro?up)bot)2$/i
 
 module.exports = handler
