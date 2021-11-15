@@ -42,6 +42,6 @@ END:VCARD
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
 
-handler.command = /^(owner|creator)$/i
+handler.command = /^(own(er)?|creator)$/i
 
 module.exports = handler
