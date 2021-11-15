@@ -1,17 +1,21 @@
 let handler = async (m, { conn, args, usedPrefix }) => {
   conn.math = conn.math ? conn.math : {}
   if (args.length < 1) throw `
-    ┌─〔 Mode 〕
-├ ${Object.keys(modes).join('\n├ ')}
-└────    
+╭━━•✵ ⃟  ⃟  ⃟✵•
+┃ ${Object.keys(modes).join('\n┃ ુོ➪ ')}
+┃ *─★‧ﾟ
+╰━━━━━━━━⸙  
+
 contoh:
 ${usedPrefix}math hard
 `.trim()
   let mode = args[0].toLowerCase()
   if (!(mode in modes)) throw `
-    ┌─〔 Mode 〕
-├ ${Object.keys(modes).join('\n├ ')}
-└────    
+╭━━•✵ ⃟  ⃟  ⃟✵•
+┃ ${Object.keys(modes).join('\n┃ ુོ➪ ')}
+┃ *─★‧ﾟ
+╰━━━━━━━━⸙
+
 contoh:
 ${usedPrefix}math hard
 `.trim()
@@ -22,7 +26,7 @@ ${usedPrefix}math hard
     await conn.reply(m.chat, `Berapa hasil dari *${math.str}*?\n\nTimeout: ${(math.time / 1000).toFixed(2)} detik\nBonus Jawaban Benar: ${math.bonus} XP`, m),
     math, 4,
     setTimeout(async () => {
-      if (conn.math[id]) await this.sendButton(m.chat, `Waktu habis!\nJawabannya adalah ${math.result}`, '', `${math.mode.toUpperCase()}`, `.math ${math.mode}`, conn.math[id][0])
+      if (conn.math[id]) await this.sendButton(m.chat, `Waktu habis!\nJawabannya adalah ${math.result}`, watermark, `${math.mode.toUpperCase()}`, `.math ${math.mode}`, conn.math[id][0])
       delete conn.math[id]
     }, math.time)
   ]
