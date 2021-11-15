@@ -3,7 +3,7 @@ let handler = async (m, { conn, args }) => {
   try {
     let online = [...Object.keys(conn.chats.get(id).presences), conn.user.jid]
     conn.reply(m.chat, '╭━━•✵ ⃟  ⃟  ⃟✵•\n' + online.map(v => '┃〲 @' + v.replace(/@.+/, '')).join`\n` + '\n┃ *─★‧ﾟ\n╰━━━━━━━━⸙', m, {
-      contextInfo: { mentionedJid: online }
+      contextInfo: { mentionedJid: offline }
     })
   } catch (e) {
     m.reply('')
