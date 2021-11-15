@@ -8,7 +8,7 @@ let handler = async (m, { conn }) => {
   //conn.sendFile(m.chat, json.url, '', watermark, m, 0, { thumbnail: await (await fetch(json.url)).buffer() })
 }
 handler.help = ['neko']
-handler.tags = ['internet']
+handler.tags = ['anime']
 handler.command = /^neko$/i
-
+//img anime button raselcomel
 module.exports = handler
