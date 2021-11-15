@@ -73,7 +73,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'stiker') tags = {
     'sticker': 'Stiker'
   }
-  if (teks == 'kerang ajaib') tags = {
+  if (teks == 'kerangajaib') tags = {
     'kerang': 'Kerang Ajaib'
   }
   if (teks == 'quotes') tags = {
@@ -109,7 +109,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'database') tags = {
     'database': 'Database'
   }
-  if (teks == 'vote') tags = {
+  if (teks == 'vote&absen') tags = {
     'vote': 'Voting',
     'absen': 'Absen'
   }
@@ -128,7 +128,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'update') tags = {
     'update': 'Update'
   }
-  if (teks == 'tanpa kategori') tags = {
+  if (teks == 'tanpa-kategori') tags = {
     '': 'Tanpa Kategori'
   }
   if (teks == 'owner') tags = {
@@ -292,6 +292,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "title": "Tanpa Kategori",
                   "description": "",
                   "rowId": ".? tanpakategori"
+                }, {
+                  "title": "Grup Official Bot",
+                  "description": "",
+                  "rowId": ".gcbot"
                 }, {
                   "title": "Owner",
                   "description": "",
