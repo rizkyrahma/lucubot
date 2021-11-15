@@ -36,7 +36,7 @@ ${'```%npmdesc```'}
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'game', 'xp', 'stiker', 'kerangajaib', 'quotes', 'admin', 'grup', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'quran', 'audio', 'jadibot', 'info', 'tanpakategori', 'owner']
+  let arrayMenu = ['all', 'game', 'xp', 'stiker', 'kerangajaib', 'quotes', 'admin', 'grup', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'vote', 'quran', 'audio', 'jadibot', 'info', 'tanpakategori', 'owner']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
     'main': 'Utama',
@@ -61,6 +61,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'audio': 'Pengubah Suara',
     'jadibot': 'Jadi Bot',
     'info': 'Info',
+    'update': 'Update',
     '': 'Tanpa Kategori',
   }
   if (teks == 'game') tags = {
@@ -72,7 +73,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'stiker') tags = {
     'sticker': 'Stiker'
   }
-  if (teks == 'kerangajaib') tags = {
+  if (teks == 'kerang ajaib') tags = {
     'kerang': 'Kerang Ajaib'
   }
   if (teks == 'quotes') tags = {
@@ -124,7 +125,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'info') tags = {
     'info': 'Info'
   }
-  if (teks == 'tanpakategori') tags = {
+  if (teks == 'update') tags = {
+    'update': 'Update'
+  }
+  if (teks == 'tanpa kategori') tags = {
     '': 'Tanpa Kategori'
   }
   if (teks == 'owner') tags = {
@@ -189,9 +193,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `${ucapan()}, ${name}`.trim(),
+          "title": `${ucapan()}, ${name}`.trim(), watermark,
           "description": "Terimakasih Atas Kunjungan Anda\n\nJangan lupa jaga kesehatan ya...\n\nTetap patuhi prokes dan ikuti vaksinasi\nMari mendukung program pemerintah dalam menanggulangi COVID-19 di Indonesia🇲🇨\n\nAda keperluan dengan owner bot?\nketik *#report* [pesan kamu]",
-          "buttonText": "Klik Disini",
+          "buttonText": "Pilih Disini",
           "listType": "SINGLE_SELECT",
           "sections": [
             {
@@ -204,12 +208,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "title": "Game",
                   "description": "",
                   "rowId": ".? game"
-
                 }, {
                   "title": "XP",
                   "description": "",
                   "rowId": ".? xp"
-
                 }, {
                   "title": "Stiker",
                   "description": "",
@@ -283,6 +285,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "description": "",
                   "rowId": ".? info"
                 }, {
+                  "title": "Update",
+                  "description": "",
+                  "rowId": ".? update"
+                }, {
                   "title": "Tanpa Kategori",
                   "description": "",
                   "rowId": ".? tanpakategori"
@@ -295,9 +301,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
             }
           ], "contextInfo": {
             "stanzaId": m.key.id,
-            "remoteJid": "status@broadcast",
-            "participant": '628881212888@s.whatsapp.net',
-            "quotedMessage": { conversation: 'List Menu Bot' }
+            //"remoteJid": "status@broadcast",
+            "participant": m.sender, //'628881212888@s.whatsapp.net',
+            "quotedMessage": m.message //{ conversation: 'List Menu Bot' }
           }
         }
       }, {}), { waitForAck: true })
@@ -413,18 +419,18 @@ function clockString(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  res = "Selamat dinihari"
+  res = "Selamat dinihari🌌"
   if (time >= 4) {
-    res = "Selamat pagi"
+    res = "Selamat pagi🌄"
   }
   if (time > 10) {
-    res = "Selamat siang"
+    res = "Selamat siang🌇"
   }
   if (time >= 15) {
-    res = "Selamat sore"
+    res = "Selamat sore🌅"
   }
   if (time >= 18) {
-    res = "Selamat malam"
+    res = "Selamat malam🌆"
   }
   return res
 }
