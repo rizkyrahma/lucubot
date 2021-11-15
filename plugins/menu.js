@@ -193,7 +193,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `${ucapan()}, ${name}`.trim(), watermark,
+          "title": `${ucapan()}, ${name}`.trim(),
           "description": "Terimakasih Atas Kunjungan Anda\n\nJangan lupa jaga kesehatan ya...\n\nTetap patuhi prokes dan ikuti vaksinasi\nMari mendukung program pemerintah dalam menanggulangi COVID-19 di Indonesia🇲🇨\n\nAda keperluan dengan owner bot?\nketik *#report* [pesan kamu]",
           "buttonText": "Pilih Disini",
           "listType": "SINGLE_SELECT",
@@ -423,18 +423,18 @@ function clockString(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  res = "Selamat dinihari🌌"
+  res = "Selamat Dini Hari 🌌"
   if (time >= 4) {
-    res = "Selamat pagi🌄"
+    res = "Selamat Pagi 🌄"
   }
   if (time > 10) {
-    res = "Selamat siang🌇"
+    res = "Selamat Siang 🌇"
   }
   if (time >= 15) {
-    res = "Selamat sore🌅"
+    res = "Selamat Sore 🌅"
   }
   if (time >= 18) {
-    res = "Selamat malam🌆"
+    res = "Selamat Malam 🌆"
   }
   return res
 }
