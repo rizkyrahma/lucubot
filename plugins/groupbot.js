@@ -3,7 +3,7 @@ let handler = async m => m.reply(`
 
 https://chat.whatsapp.com/CUCsW6BWfmJLJwJgPQIaKM
 
-\`\`\`ramein ya kak 🥰\`\`\`
+\`\`\`Jangan lupa join ya kak ${m.sender} 🥰\`\`\`
 `.trim())
 handler.help = ['groupbot']
 handler.tags = ['info', 'grup']
