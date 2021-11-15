@@ -1,5 +1,5 @@
 let fetch = require('node-fetch')
-let handler = async (m, { conn }) => await conn.send2ButtonLoc(m.chat, await (await fetch(fla + 'donasi')).buffer(), `
+let handler = async (m, { conn }) => await conn.sendButtonLoc(m.chat, await (await fetch(fla + 'donasi')).buffer(), `
 ╭━━•›ꪶ ۪۪⸙ ━ ━ ━ ━ ꪶ ۪۪⸙‹•━━╮ 
 ┃╭┈─────────────⩵꙰ཱི࿐ 
 ┃╰──*DONATE*──➤ ↶↷* 
