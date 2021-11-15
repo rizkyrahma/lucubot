@@ -1,5 +1,6 @@
 let { MessageType } = require('@adiwajshing/baileys')
-let handler = async (m, { conn, text, usedPrefix }) => {
+//let handler = async (m, { conn, text, usedPrefix }) => {
+let handler = async m => {    
 await conn.sendMessage(res.gid, `
 Grup whatsapp bot, jangan lupa join ya su<3
 `, MessageType.text, { contextInfo: { externalAdReply :{
