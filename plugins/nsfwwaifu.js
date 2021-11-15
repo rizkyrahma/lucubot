@@ -5,14 +5,14 @@ let handler = async (m, { conn }) => {
   if (!res.ok) throw await `${res.status} ${res.statusText}`;
   let json = await res.json();
   if (json.urlnsfwnsfwwaifu)
-    await conn.sendButtonImg(m.chat, await (await fetch(json.urlnsfwwaifu)).buffer(), 'Nekonya bwank', watermark, 'Get Again -limit', '/nsfwwaifu', m)
+    await conn.sendButtonImg(m.chat, await (await fetch(json.urlnsfwwaifu)).buffer(), 'Nekonya bwank', watermark, 'Get Again -limit', '/nsfwwaifu', m);
     //conn.sendFile(
       //m.chat,
       //json.url,
       //"bokepkartun",
       //"sange kok sama kartun, stress...",
       //m
-    );
+    //);
   else throw json;
 };
 handler.help = ["nsfwwaifu"];
