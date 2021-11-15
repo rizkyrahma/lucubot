@@ -15,7 +15,7 @@ let handler = async (m, { conn }) => {
       .catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png")
   );
   const sticker = await createSticker(animatedGif, {
-    //type: StickerTypes.FULL,
+    type: StickerTypes.FULL,
     pack: global.packname,
     author: global.author,
   });
