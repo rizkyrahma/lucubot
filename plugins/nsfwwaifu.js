@@ -5,7 +5,7 @@ let handler = async (m, { conn }) => {
   if (!res.ok) throw await `${res.status} ${res.statusText}`;
   let json = await res.json();
   if (json.url)
-    await conn.sendButtonImg(m.chat, await (await fetch(json.url)).buffer(), 'Jangan sagne bwank, mau lagi?=limit', watermark, 'Get Again -limit', '/nsfwwaifu', m);
+    await conn.sendButtonImg(m.chat, await (await fetch(json.url)).buffer(), 'Jangan sagne bwank,\nmau lagi?=limit', watermark, 'Get Again', '/nsfwwaifu', m);
     //conn.sendFile(
       //m.chat,
       //json.url,
