@@ -20,7 +20,7 @@ let handler = async (m, { conn, text, participants }) => {
         quoted: false
       }
     ),
-    text || //q.text
+    text || q.text
   )
   await conn.relayWAMessage(msg)
 }
