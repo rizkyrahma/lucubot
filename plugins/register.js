@@ -15,7 +15,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
   user.regTime = + new Date
   user.registered = true
   let sn = createHash('md5').update(m.sender).digest('hex')
-  m.reply(`
+  m.reply(m.sender, sn)`
 Daftar berhasil!
 
 ╭━━•✵ ⃟  ⃟  ⃟✵•
@@ -26,8 +26,9 @@ Daftar berhasil!
 ┃〲 SN: ${sn}
 ┃ *─★‧ﾟ
 ╰━━━━━━━━⸙
+
 simpan/bintangi pesan ini karena SN (Serial Number) digunaan untuk daftar ulang
-`.trim())
+`.trim()
 }
 handler.help = ['daftar'].map(v => v + ' <nama>.<umur>')
 handler.tags = ['xp']
