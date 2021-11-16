@@ -35,8 +35,7 @@ _*FAMILY*_
 _*DESCRIPTION*_
 ${json.description}
 
-_*Generation:*_ 
-${json.generation}
+*Generation:* ${json.generation}
   `.trim();
   if (!json.error)
     await conn.sendFile(
