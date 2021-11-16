@@ -33,7 +33,7 @@ let handler = async(m, { conn }) => {
         description: kontol,
         sections:  [{title: "Silahkan di pilih gausah pilih yang gaada", rows: [
         {title: 'Menu Utama', description: "Kembali ke Menu Utama", rowId:".?"},
-        {title: 'Sewa Bot', description: "Untuk Berlangganan Ke XsvsH BOT", rowId:".sewa"},
+        {title: 'Sewa Bot', description: "Sewa bot dengan memasukkan bot ke grup kamu", rowId:".sewa"},
         {title: 'Cara Invit?', description: "Cara Memasukkan Bot Di GC", rowId:".panduanadd"},
         {title: 'Nomor Owner', description: "CHAT *P* TIDAK DI BALAS", rowId:".owner"},
        ] }],
