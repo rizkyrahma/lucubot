@@ -4,8 +4,8 @@ let handler = async (m, { conn, text }) => {
   if (!/image/.test(mime)) throw `balas gambarnya!`
   try { q = m.quoted.download() }
   catch (e) { q = m.download() }
-  m.reply('_Sedang membuat..._\n*Mohon tunggu sekitar 1 menit*')
-  running(await q).then(vid => conn.sendFile(m.chat, vid, 'run.mp4', '*© Nurutomo*\nMade with FFmpeg', m))
+  m.reply(global.wait)
+  running(await q).then(vid => conn.sendFile(m.chat, vid, 'run.mp4', watermark, m))
 }
 handler.help = ['run']
 handler.tags = ['tools']
