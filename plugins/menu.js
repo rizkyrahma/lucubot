@@ -128,7 +128,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'update') tags = {
     'update': 'Update'
   }
-  if (teks == 'tanpa-kategori') tags = {
+  if (teks == 'tanpakategori') tags = {
     '': 'Tanpa Kategori'
   }
   if (teks == 'owner') tags = {
