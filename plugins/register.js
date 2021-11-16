@@ -18,16 +18,18 @@ let handler = async function (m, { text, usedPrefix, command }) {
   m.reply(`
 Daftar berhasil!
 
-┌─〔 Info 〕
-├ Nama: ${name}
-├ Umur: ${age} tahun
-├ SN: ${sn}
-└────
-
+╭━━•✵ ⃟  ⃟  ⃟✵•
+┃
+┃ ુོ➪ *Info User*
+┃〲 Nama: ${name}
+┃〲 Umur: ${age} tahun
+┃〲 SN: ${sn}
+┃ *─★‧ﾟ
+╰━━━━━━━━⸙
 simpan/bintangi pesan ini karena SN (Serial Number) digunaan untuk daftar ulang
 `.trim())
 }
-handler.help = ['daftar', 'reg', 'register'].map(v => v + ' <nama>.<umur>')
+handler.help = ['daftar'].map(v => v + ' <nama>.<umur>')
 handler.tags = ['xp']
 
 handler.command = /^(daftar|reg(ister)?)$/i
