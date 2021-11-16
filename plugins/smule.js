@@ -3,7 +3,7 @@ let handler = async (m, { conn, args }) => {
   global.API('xteam', '/dl/smule', {
     url: args[0]
   }, 'APIKEY')
-  conn.sendFile(m.chat, undefined, '', '', m)
+  conn.sendFile(m.chat, url, 'video/mp4', watermark, m)
 }
 handler.help = ['smule'].map(v => v + ' <url>')
 handler.tags = ['downloader']
