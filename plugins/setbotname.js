@@ -11,7 +11,7 @@ let handler = async (m, { conn, text }) => {
 }
 handler.help = ['setbotname <teks>']
 handler.tags = ['owner']
-handler.command = /^(setbotname)$/i
+handler.command = /^(set(botname|nam(a)?e?bot))$/i
 handler.owner = true
 
 module.exports = handler
