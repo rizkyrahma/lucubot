@@ -3,7 +3,7 @@ let handler = async (m, { conn, args }) => {
   global.API('xteam', '/dl/', {
     url: args[0]
   }, 'APIKEY')
-  conn.sendFile(m.chat, url, '', watermark, m)
+  conn.sendFile(m.chat, url, '', '', m)
 }
 handler.help = ['snackvideo'].map(v => v + ' <url>')
 handler.tags = ['downloader']
