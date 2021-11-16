@@ -5,9 +5,9 @@ let handler = async (m, { conn, args }) => {
   }, 'APIKEY')
   conn.sendFile(m.chat, undefined, '', '', m)
 }
-handler.help = [].map(v => v + ' <url>')
+handler.help = ['smule'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 
-handler.command = /^\x00s$/i
+handler.command = /^smule$/i
 
 module.exports = handler
