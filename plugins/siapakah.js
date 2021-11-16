@@ -1,5 +1,6 @@
 let handler = async (m, { conn, participants, command, text }) => {
     let who
+    if (!text) throw `uhm.. mau tanya apa?`
     if (!m.isGroup) who = m.sender
     else {
         let member = participants.map(u => u.jid)
