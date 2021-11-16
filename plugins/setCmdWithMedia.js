@@ -1,5 +1,9 @@
-module.exports = Object.assign(async function handler(m, { text }) {
+module.exports = Object.assign(async function handler(m, { isOwner, isPremium, text }) {
     global.db.data.sticker = global.db.data.sticker || {}
+    if (!(isPremium || isOwner)) {
+                global.dfail('premium', m, conn)
+                throw false
+                }
     if (!m.quoted) throw 'balas stikernya!'
     if (!m.quoted.fileSha256) throw 'SHA256 Hash Missing'
     if (!text) throw `uhm.. teksnya mana?`
