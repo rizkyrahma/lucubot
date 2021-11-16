@@ -44,6 +44,6 @@ ${id}`)
 }
 handler.help = ['hadis <nama_hadis> <nomor>']
 handler.tags = ['quran']
-handler.command = /^(h(adist?)?)$/i
+handler.command = /^(hadist?)$/i
 module.exports = handler
 //hm
