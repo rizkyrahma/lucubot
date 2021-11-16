@@ -153,16 +153,16 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
     case 'gruponly':
     case 'grouponly':
       isAll = true
-      if (!isOwner) {
-        global.dfail('owner', m, conn)
+      if (!isROwner) {
+        global.dfail('rowner', m, conn)
         throw false
       }
       setting.groupOnly = isEnable
       break
     case 'backup':
       isAll = true
-      if (!isOwner) {
-        global.dfail('owner', m, conn)
+      if (!isROwner) {
+        global.dfail('rowner', m, conn)
         throw false
       }
       setting.backup = isEnable
@@ -179,16 +179,16 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       break
     case 'antitroli':
       isAll = true
-      if (!isOwner) {
-        global.dfail('owner', m, conn)
+      if (!isROwner) {
+        global.dfail('rowner', m, conn)
         throw false
       }
       setting.antitroli = isEnable
       break
     case 'autoread':
       isAll = true
-      if (!isOwner) {
-        global.dfail('owner', m, conn)
+      if (!isROwner) {
+        global.dfail('rowner', m, conn)
         throw false
       }
       opts['autoread'] = isEnable
@@ -228,8 +228,8 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
     case 'bot':
     case 'b':
       isAll = true
-      if (!isOwner) {
-        global.dfail('owner', m, conn)
+      if (!isROwner) {
+        global.dfail('rowner', m, conn)
         throw false
       }
       setting.jadibot = isEnable
