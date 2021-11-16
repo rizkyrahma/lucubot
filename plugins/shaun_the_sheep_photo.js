@@ -5,11 +5,11 @@ let handler = async (m) => {
   if (!mime) throw 'balas gambarnya!'
   let media = await q.download()
   let url = await uploadImage(media)
-  await conn.sendFile(m.chat, global.API('xteam', '/videomaker/shaunthesheep', { url }, 'APIKEY'), 'shaunthesheep.mp4', '', m)
+  await conn.sendFile(m.chat, global.API('xteam', '/videomaker/shaunthesheep', { url }, 'APIKEY'), 'shaunthesheep.mp4', watermark, m)
 }
 handler.help = ['shaunthesheep']
-handler.tags = ['videomaker']
+handler.tags = ['update']
 
-handler.command = /^shaunthesheep$/i
+handler.command = /^shaunthesheep|sts$/i
 
 module.exports = handler
