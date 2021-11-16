@@ -8,20 +8,23 @@ let handler = async (m, { conn, args, usedPrefix, command, isPrems }) => {
 *${usedPrefix}emo(spasi)ap(spasi)❤️*
 *${usedPrefix}emo ap ❤️*
 
-┌〔 Opsi 〕
-├ ap = apple
-├ fa = facebook
-├ go = google
-├ ht = htc
-├ lg
-├ mi = microsoft
-├ mo = mozilla
-├ op = openmoji
-├ pi = pixel
-├ sa = samsung
-├ tw = twitter
-├ wh = whatsapp
-└────
+╭━━•✵ ⃟  ⃟  ⃟✵•
+┃
+┃ ુོ➪*Opsi*
+┃〲 ap = apple
+┃〲 fa = facebook
+┃〲 go = google
+┃〲 ht = htc
+┃〲 Ig = instagram  
+┃〲 mi = microsoft
+┃〲 mo = mozilla
+┃〲 op = openmoji
+┃〲 pi = pixel
+┃〲 sa = samsung
+┃〲 tw = twitter
+┃〲 wh = whatsapp
+┃ *─★‧ﾟ
+╰━━━━━━━━⸙
 
 Hanya bisa 1 emoji, perhatikan spasi, jangan spam!
 
@@ -75,7 +78,7 @@ Mau bikin stiker bisa 2/3 emoji? klik http://wa.me/62851577296390?text=%23stiker
               })
             })
           break
-        case 'lg':
+        case 'Ig':
           emoji.get(`${args[1]}`)
             .then(async emoji => {
               let stiker = await sticker(false, emoji.images[11].url, global.packname, global.author)
