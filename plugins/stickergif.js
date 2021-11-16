@@ -23,6 +23,8 @@ let handler = async (m, { conn, usedPrefix, command }) => {
                 console.log('Finish')
                 buff = fs.readFileSync(ran)
                 conn.sendMessage(m.chat, buff, 'stickerMessage', { quoted: m })
+                let stiker = await sticker(false, buff, global.packname, global.author)
+                await conn.sendMessage(m.chat, stiker, MessageType.sticker)
                 fs.unlinkSync(media)
                 fs.unlinkSync(ran)
             })
@@ -61,7 +63,7 @@ handler.help = ['stiker2']
 handler.tags = ['sticker']
 handler.command = /^(s(t|k|tic?ker)?2)$/i
 
-handler.disabled = true
+handler.limit = true
 
 module.exports = handler
 
