@@ -8,31 +8,35 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   if (!res.ok) throw `${res.status} ${res.statusText}`;
   let json = await res.json();
   let pokedex = `
-Name: ${json.name}
-Id: ${json.id}
-Type: ${json.type}
-Species: ${json.species}
-Abilites: ${json.abilities}
-Height: ${json.height}
-Weight: ${json.weight}
-Base experience: ${json.base_experience}
-Gender: ${json.gender}
-Egg groups: ${json.egg_groups}\n
-STATS
-Hp: ${json.stats.hp}
-Attack: ${json.stats.attack}
-Defense: ${json.stats.defense}
-Sp atk: ${json.stats.sp_atk}
-Sp def: ${json.stats.sp_def}
-Speed: ${json.stats.speed}
-Total: ${json.stats.total}\n
-FAMILY
-Evolution Stage: ${json.family.evolutionStage}
-Evolution Line: ${json.family.evolutionLine}\n
-DESCRIPTION
+*Name:* ${json.name}
+*Id:* ${json.id}
+*Type:* ${json.type}
+*Species:* ${json.species}
+*Abilites:* ${json.abilities}
+*Height:* ${json.height}
+*Weight:* ${json.weight}
+*Base experience:* ${json.base_experience}
+*Gender:* ${json.gender}
+*Egg groups:* ${json.egg_groups}\n
+
+_*STATS_*
+*Hp:* ${json.stats.hp}
+*Attack:* ${json.stats.attack}
+*Defense:* ${json.stats.defense}
+*Sp atk:* ${json.stats.sp_atk}
+*Sp def:* ${json.stats.sp_def}
+*Speed:* ${json.stats.speed}
+*Total:* ${json.stats.total}\n
+
+_*FAMILY*_
+*Evolution Stage:* ${json.family.evolutionStage}
+*Evolution Line:* ${json.family.evolutionLine}\n
+
+_*DESCRIPTION*_
 ${json.description}
-Generation: ${json.generation}\n\n
-~fatur
+
+_*Generation:*_ 
+${json.generation}
   `.trim();
   if (!json.error)
     await conn.sendFile(
