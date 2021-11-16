@@ -48,7 +48,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
             .on('end', function () {
                 console.log('Finish')
                 buff = fs.readFileSync(ran)
-                conn.sendMessage(m.chat, buff, 'stickerMessage', { quoted: m })
+                conn.sendMessage(m.chat, buff, 'stickerMessage', { quoted: m, global.packname })
                 fs.unlinkSync(media)
                 fs.unlinkSync(ran)
             })
