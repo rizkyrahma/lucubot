@@ -6,3 +6,4 @@ async function handler(m) {
 }
 handler.command = /^q$/i
 module.exports = handler
+//supaya gk diteruskan gimana? 
