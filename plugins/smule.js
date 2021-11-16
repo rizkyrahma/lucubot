@@ -3,7 +3,7 @@ let handler = async (m, { conn, args }) => {
   global.API('lolhum', '/api/smule', 'APIKEY' {
     url: args[0]
   })
-  conn.sendFile(m.chat, url, '', watermark, m)
+  conn.sendFile(m.chat, url, '', '', m)
 }
 handler.help = ['smule'].map(v => v + ' <url>')
 handler.tags = ['downloader']
