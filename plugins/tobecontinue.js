@@ -18,7 +18,7 @@ let handler = async (m, { conn }) => {
   const height = Math.round(width / ratio);
   ctx.drawImage(base, 0, canvas.height - height, width, height);
   const attachment = canvas.toBuffer();
-  conn.sendFile(m.chat, attachment, 'to-be-continue.png', '© stickerinbot', m, 0, { thumbnail: attachment })
+  conn.sendFile(m.chat, attachment, 'to-be-continue.png', watermark, m, 0, { thumbnail: await(await fetch(thumbfoto)).buffer() })
 }
 
 handler.help = ['tbc @<user>']
