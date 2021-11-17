@@ -33,6 +33,6 @@ handler.command = ['tagme']
 // handler.level = 1
 // handler.nfsw = false
 
-handler.disabled = true
+handler.disabled = false
 
 module.exports = handler
