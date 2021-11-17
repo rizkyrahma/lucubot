@@ -2,7 +2,7 @@ let gtts = require('node-gtts')
 let fs = require('fs')
 let path = require('path')
 let { spawn } = require('child_process')
-
+if (!text) throw `teksnya mana?\ncontoh: ${usedPrefix + command} halo`
 const defaultLang = 'id'
 let handler = async (m, { conn, args }) => {
 
