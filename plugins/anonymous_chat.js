@@ -5,7 +5,7 @@ async function handler(m, { command, usedPrefix }) {
     command = command.toLowerCase()
     this.anonymous = this.anonymous ? this.anonymous : {}
     switch (command) {
-        case 'next':
+        //case 'next':
         case 'leave': {
             let room = Object.values(this.anonymous).find(room => room.check(m.sender))
             if (!room) {
@@ -25,10 +25,10 @@ async function handler(m, { command, usedPrefix }) {
             }
             let room = Object.values(this.anonymous).find(room => room.state === 'WAITING' && !room.check(m.sender))
             if (room) {
-                await this.sendButton(room.a, '_Partner ditemukan!_', 'Lanjut/next?', 'Next', `${usedPrefix}next`)
+                await this.sendButton(room.a, '_Partner ditemukan!_', 'silahkan chatingan', 'Halo', '👋')
                 room.b = m.sender
                 room.state = 'CHATTING'
-                await this.sendButton(room.b, '_Partner ditemukan!_', 'Lanjut/next?', 'Next', `${usedPrefix}next`)
+                await this.sendButton(room.b, '_Partner ditemukan!_', 'silahkan chatingan', 'Hai', '👋')
             } else {
                 let id = + new Date
                 this.anonymous[id] = {
