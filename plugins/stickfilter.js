@@ -7,9 +7,12 @@ const effects = ['greyscale', 'invert', 'brightness', 'threshold', 'sepia', 'red
 let handler = async (m, { conn, usedPrefix, text, command }) => {
   let effect = text.trim().toLowerCase()
   if (!effects.includes(effect)) throw `
-┌─〔 Daftar Efek 〕
-${effects.map(effect => `├ ${effect}`).join('\n')}
-└────
+╭━━•✵ ⃟  ⃟  ⃟✵•
+┃
+┃ ુོ➪ *Daftar Efek*
+${effects.map(effect => `┃〲 ${effect}`).join('\n')}
+┃ *─★‧ﾟ
+╰━━━━━━━━⸙
 contoh: 
 ${usedPrefix + command} greyscale
 `.trim()
@@ -28,7 +31,7 @@ ${usedPrefix + command} greyscale
       quoted: m
     })
   } catch (e) {
-    await conn.sendFile(m.chat, apiUrl, 'image.png', null, m, 0, { thumbnail: await (await fetch(apiUrl)).buffer() })
+    await conn.sendFile(m.chat, apiUrl, 'image.png', watermark, m, 0, { thumbnail: await (await fetch(thumbfoto)).buffer() })
   }
 }
 
