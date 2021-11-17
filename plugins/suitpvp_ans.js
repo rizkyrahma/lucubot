@@ -25,7 +25,6 @@ klik wa.me/${conn.user.jid.split`@`[0]}`, m.chat, {
           mentionedJid: [room.p, room.p2]
         }
       })
-
       if (!room.pilih) this.send3Button(room.p, 'Silahkan pilih', `Menang +${room.poin}XP\nKalah -${room.poin_lose}XP`, 'Batu🗿', 'Batu', 'Kertas📄', 'Kertas', 'Gunting✂️', 'Gunting', m)
       if (!room.pilih2) this.send3Button(room.p2, 'Silahkan pilih', `Menang +${room.poin}XP\nKalah -${room.poin_lose}XP`, 'Batu🗿', 'Batu', 'Kertas📄', 'Kertas', 'Gunting✂️', 'Gunting', m)
       room.waktu_milih = setTimeout(() => {
@@ -77,7 +76,6 @@ _*Hasil Suit*_${tie ? '\nSERI' : ''}
       if (!tie) {
         db.data.users[win == room.p ? room.p : room.p2].exp += room.poin
         db.data.users[win == room.p ? room.p2 : room.p].exp += room.poin_lose
-
       }
       delete this.suit[room.id]
     }
