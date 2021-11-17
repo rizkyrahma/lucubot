@@ -12,7 +12,8 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
 ┃ ુོ➪ *Daftar Efek*
 ${effects.map(effect => `┃〲 ${effect}`).join('\n')}
 ┃ *─★‧ﾟ
-╰━━━━━━━━⸙contoh:
+╰━━━━━━━━⸙
+contoh:
 ${usedPrefix + command} jail
 `.trim()
   let q = m.quoted ? m.quoted : m
