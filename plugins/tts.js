@@ -4,16 +4,14 @@ let path = require('path')
 let { spawn } = require('child_process')
 if (!text) throw `teksnya mana?\ncontoh: ${usedPrefix + command} halo`
 const defaultLang = 'id'
-let handler = async (m, { conn, args }) => {
-
+let handler = async (m, { usedPrefix, command, conn, args }) => {
   let lang = args[0]
   let text = args.slice(1).join(' ')
   if ((args[0] || '').length !== 2) {
     lang = defaultLang
     text = args.join(' ')
   }
-  if (!text && m.quoted && m.quoted.text) text = m.quoted.text
-
+  if (!text) throw `teksnya mana?\ncontoh: ${usedPrefix + command} rasel comel`
   let res
   try { res = await tts(text, lang) }
   catch (e) {
