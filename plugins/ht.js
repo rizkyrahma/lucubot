@@ -13,7 +13,7 @@ let handler = async (m, { conn, text }) => {
 }
 handler.help = ['tahta <teks>']
 handler.tags = ['nulis']
-handler.command = /^((harta)?tahta|harta)$/i
+handler.command = /^((harta)?(tahta)?|ht)$/i
 handler.limit = true
 
 module.exports = handler
