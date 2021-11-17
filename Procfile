@@ -1,1 +1,1 @@
-worker: node . --restrict
+worker: node . 
