@@ -7,10 +7,12 @@ const effects = ['jail', 'gay', 'glass', 'wasted', 'triggered']
 let handler = async (m, { conn, usedPrefix, text, command }) => {
   let effect = text.trim().toLowerCase()
   if (!effects.includes(effect)) throw `
-┌─〔 Daftar Efek 〕
-${effects.map(effect => `├ ${effect}`).join('\n')}
-└────
-contoh:
+╭━━•✵ ⃟  ⃟  ⃟✵•
+┃
+┃ ુོ➪ *Daftar Efek*
+${effects.map(effect => `┃〲 ${effect}`).join('\n')}
+┃ *─★‧ﾟ
+╰━━━━━━━━⸙contoh:
 ${usedPrefix + command} jail
 `.trim()
   let q = m.quoted ? m.quoted : m
@@ -28,7 +30,7 @@ ${usedPrefix + command} jail
       quoted: m
     })
   } catch (e) {
-    await conn.sendFile(m.chat, apiUrl, 'image.png', null, m, 0, { thumbnail: await (await fetch(apiUrl)).buffer() })
+    await conn.sendFile(m.chat, apiUrl, 'image.png', null, m, 0, { thumbnail: await (await fetch(thumbfoto)).buffer() })
   }
 }
 
