@@ -45,7 +45,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'sticker': 'Stiker',
     'kerang': 'Kerang Ajaib',
     'quotes': 'Quotes',
-    'admin': `Admin ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`,
+    'admin': 'Admin',
     'group': 'Grup',
     'premium': 'Premium',
     'internet': 'Internet',
@@ -80,7 +80,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'quotes': 'Quotes'
   }
   if (teks == 'admin') tags = {
-    'admin': `Admin ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`
+    'admin': 'Admin'
   }
   if (teks == 'grup') tags = {
     'group': 'Grup'
@@ -109,7 +109,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'database') tags = {
     'database': 'Database'
   }
-  if (teks == 'vote&absen') tags = {
+  if (teks == 'voteabsen') tags = {
     'vote': 'Voting',
     'absen': 'Absen'
   }
