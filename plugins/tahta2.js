@@ -34,11 +34,11 @@ let handler = async (m, { text, usedPrefix, command }) => {
       console.log(e)
       throw '_*Error!*_'
     }
-  } else throw `contoh:\n${usedPrefix + command} ariffb`
+  } else throw `contoh:\n${usedPrefix + command} rasel`
 }
-handler.help = ['harta2'].map(v => v + ' <teks>')
+handler.help = ['tahta2'].map(v => v + ' <teks>')
 handler.tags = ['tools']
-handler.command = /^(harta|ht|tahta)2$/i
+handler.command = /^((harta)?(tahta)?|ht)2$/i
 handler.limit = true
 module.exports = handler
 
