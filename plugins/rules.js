@@ -3,7 +3,7 @@ let { MessageType } = require('@adiwajshing/baileys')
 let handler = async(m, { conn }) => {
     let kontol = `╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
 ┃╭┈─────────────⩵꙰ཱི࿐
-┃╰──*🅡🅤🅛🅔🅢*──➤ ↶↷*
+┃╰── *🅡🅤🅛🅔🅢* ──➤ ↶↷*
 ┃
 ╰•͙✩̣̣̣̣
 ⁙┃ LUCU BOT adalah Bot yg merupakan akronim dari kata Robot yang berarti sebuah sistem yang diprogram oleh komputer.
