@@ -26,6 +26,6 @@ handler.help = ['join12 <linkgrup>']
 handler.tags = ['main', 'update']
 handler.command = /^join12$/i
 
-handler.limit = 7
+handler.limit = 10
 
 module.exports = handler
