@@ -398,7 +398,6 @@ module.exports = {
               }
             }
           }
-        }
         break
       case 'promote':
         text = (chat.sPromote || this.spromote || conn.spromote || '@user sekarang Admin')
