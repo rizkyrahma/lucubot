@@ -17,8 +17,8 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 *Ukuran File:* ${filesizeF}
   `.trim(), m, 0, {
       ..._thumb,
-      asDocument: true //blok salah satu ya tod 🗿
-      //asDocument: chat.useDocument
+      //asDocument: true //blok salah satu ya tod 🗿
+      asDocument: chat.useDocument
     })
   } catch (e) {
     return await conn.sendButton(m.chat, 'Server Error', watermark, 'COBA LAGI', `${usedPrefix + command} ${args[0]}`)
