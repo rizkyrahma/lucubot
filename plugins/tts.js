@@ -2,7 +2,6 @@ let gtts = require('node-gtts')
 let fs = require('fs')
 let path = require('path')
 let { spawn } = require('child_process')
-if (!text) throw `teksnya mana?\ncontoh: ${usedPrefix + command} halo`
 const defaultLang = 'id'
 let handler = async (m, { usedPrefix, command, conn, args }) => {
   let lang = args[0]
@@ -18,7 +17,7 @@ let handler = async (m, { usedPrefix, command, conn, args }) => {
     m.reply(e + '')
     res = await tts(text)
   } finally {
-    conn.sendFile(m.chat, res, 'tts.opus', null, m, true)
+    //conn.sendFile(m.chat, res, 'tts.opus', null, m, true)
   }
 }
 handler.help = ['tts <lang> <teks>']
