@@ -6,7 +6,7 @@ Cara menambahkan bot ke dalam group.
 Lucu bot memberlakukan trial gratis, 
 Ada 3 opsi setiap opsi memiliki limit hingga 10 limit terpakai
 
-1. ${usedPrefix}join4 linkgrup (5jam) 
+1. ${usedPrefix}join5 linkgrup (5jam) 
 2. ${usedPrefix}join12 linkgrup (12jam) 
 3. ${usedPrefix}join24 linkgrup (24jam) 
 
