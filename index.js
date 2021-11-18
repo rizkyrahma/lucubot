@@ -4,13 +4,13 @@ let path = require('path')
 let fs = require('fs')
 let package = require('./package.json')
 const CFonts = require('cfonts')
-CFonts.say('Stikerin Bot', {
-  colors: ['#f2aa4c'],
+CFonts.say('Lucu Bot', {
+  colors: ['#00ff00'],
   font: 'block',
   align: 'center',
 })
 CFonts.say(`'${package.name}' Oleh @${package.author.name || package.author}`, {
-  colors: ['#f2aa4c'],
+  colors: ['#ff33cc'],
   font: 'console',
   align: 'center',
 })
@@ -25,7 +25,7 @@ function start(file) {
   isRunning = true
   let args = [path.join(__dirname, file), ...process.argv.slice(2)]
   CFonts.say([process.argv[0], ...args].join(' '), {
-    colors: ['#f2aa4c'],
+    colors: ['#0066ff'],
     font: 'console',
     align: 'center',
   })
