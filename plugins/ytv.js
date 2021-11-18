@@ -17,10 +17,11 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 *Ukuran File:* ${filesizeF}
   `.trim(), m, 0, {
       ..._thumb,
-      asDocument: chat.useDocument
+      asDocument: true //blok salah satu ya tod 🗿
+      //asDocument: chat.useDocument
     })
   } catch (e) {
-    return await conn.sendButton(m.chat, 'Server Error', '', 'COBA LAGI', `${usedPrefix + command} ${args[0]}`)
+    return await conn.sendButton(m.chat, 'Server Error', watermark, 'COBA LAGI', `${usedPrefix + command} ${args[0]}`)
   }
 }
 handler.help = ['mp4', 'v', ''].map(v => 'yt' + v + ` <url> [server: ${servers.join(', ')}]`)
