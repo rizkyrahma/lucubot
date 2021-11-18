@@ -18,10 +18,10 @@ Ketik ${usedPrefix}tete untuk bantuan
 Bonus: ${poin} XP
 `.trim()
     conn.tekateki[id] = [
-        await conn.sendButton(m.chat, caption, 'Butuh bantuan?\nklik di bawah!', 'Bantuan', '.tete'),
+        await conn.sendButton(m.chat, caption, watermark, 'Bantuan', '.tete'),
         json, poin,
         setTimeout(async () => {
-            if (conn.tekateki[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, 'Mau main lagi?\nklik di bawah!', 'Teka Teki', `.tekateki`)
+            if (conn.tekateki[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, watermark, 'Teka Teki', `.tekateki`)
             delete conn.tekateki[id]
         }, timeout)
     ]
