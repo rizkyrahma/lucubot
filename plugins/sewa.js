@@ -38,7 +38,7 @@ PULSA: 085346545126 (+5.000)
         {title: '12 Jam', description: "Rp.0\nMemasukkan bot selama 12 Jam(-10 limit)", rowId:".joinf"},
         {title: 'Sewa RDP', description: "Rp30.000 run bot 24jam selama 1 bulan ", rowId:".konfir Saya ingin sewa RDP-nya"},
         {title: 'Owner? ', description: "Chat owner nya jika ada perlu.", rowId:".owner"},
-        {title: 'Join?', description: "Cara Memasukkan Bot Ke Grup.", rowId:".panduanadd"},
+        {title: 'Join?', description: "Cara Memasukkan Bot Ke Grup.", rowId:".join"},
        ] }],
         listType: 1
        }
