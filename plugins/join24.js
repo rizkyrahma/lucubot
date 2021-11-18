@@ -26,6 +26,6 @@ handler.help = ['join24 <linkgrup>']
 handler.tags = ['main', 'update']
 handler.command = /^join24$/i
 
-handler.limit = 10
+handler.rowner = true 
 
 module.exports = handler
