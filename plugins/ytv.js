@@ -1,4 +1,4 @@
-let limit = 200
+let limit = 40
 let fetch = require('node-fetch')
 const { servers, ytv } = require('../lib/y2mate')
 let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) => {
@@ -26,7 +26,7 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 }
 handler.help = ['mp4', 'v', ''].map(v => 'yt' + v + ` <url> [server: ${servers.join(', ')}]`)
 handler.tags = ['downloader']
-handler.command = /^yt(v|mp4)?$/i
+handler.command = /^yt(v(ideo)?|mp4)?$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
