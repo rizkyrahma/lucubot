@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/ariffb25/stikerinbot/issues"
   },
-  "homepage": "https://chat.whatsapp.com/CUCsW6BWfmJLJwJgPQIaKM",
+  "homepage": "https://chat.whatsapp.com/CUCsW6BWfmJLJwJgPQIaKM", //jan di ubah lah banh
   "dependencies": {
     "@adiwajshing/baileys": "github:adiwajshing/baileys",
     "awesome-phonenumber": "^2.54.0",
