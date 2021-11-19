@@ -72,7 +72,7 @@ Nb:bot ini masih terus dikembangkan.`
 global.ppkosong = 'https://telegra.ph/file/22fd84e4a3244e1b17e4e.png'
 global.image = 'https://telegra.ph/file/c9a5e49b5336604baa137.jpg'//change the image
 global.thumbfoto = 'https://telegra.ph/file/c9a5e49b5336604baa137.jpg' //thumbnail foto tools
-global.yamete = 'https://telegra.ph/file/c9a5e49b5336604baa137.jpg' //qr
+global.yamete = 'https://telegra.ph/file/f7b13f18a1f21e5ca6aed.jpg' //qr
 global.sumberurl = 'https://instagram.com/rasel.ganz'
 global.deskripsiurl = 'Saya adalah Bot WhatsApp ×͜×.'
 
