@@ -47,8 +47,8 @@ global.wait = '*Tunggu sebentar ya sayang*'
 global.eror = 'Maaf terjadi kesalahan'
 global.fla = 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text='
 global.watermark = '© rasel ×͜×' //change the watermark (beberapa harus manual)
-global.thanks = '𝑳𝑼𝑪𝑼 𝑩𝑶𝑻 @^1.1.4'
-global.thanks2 = `Thanks to:
+global.thanks = `𝑳𝑼𝑪𝑼 𝑩𝑶𝑻 @^1.1.4`
+global.ttq = `Thanks to:
 •Allah swt
 •Nurutomo
 •Ariffb
