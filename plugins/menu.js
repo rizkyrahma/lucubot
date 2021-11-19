@@ -29,7 +29,6 @@ const defaultMenu = {
   body: '⁙┃〲 %cmd %islimit %isPremium',
   footer: '⁙╰•°°°🕊°°°°°🕊°°°°°°🕊°°°°°°°°\n',
   after: `
-*%npmname@^%version*
 ${'```%npmdesc```'}
 `,
 }
