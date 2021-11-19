@@ -1,4 +1,4 @@
-let limit = 30
+let limit = 200
 let fetch = require('node-fetch')
 const { servers, ytv } = require('../lib/y2mate')
 let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) => {
@@ -17,8 +17,8 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 *Ukuran File:* ${filesizeF}
   `.trim(), m, 0, {
       ..._thumb,
-      //asDocument: true //blok salah satu ya tod 🗿
-      asDocument: chat.useDocument
+      asDocument: true //blok salah satu ya tod 🗿
+      //asDocument: chat.useDocument
     })
   } catch (e) {
     return await conn.sendButton(m.chat, 'Server Error', watermark, 'COBA LAGI', `${usedPrefix + command} ${args[0]}`)
