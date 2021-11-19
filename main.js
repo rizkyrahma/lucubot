@@ -47,6 +47,7 @@ global.DATABASE = global.db // Backwards Compatibility
 
 global.conn = new WAConnection()
 conn.version = [2, 2143, 3]
+conn.browserDescription = ["Lucu Bot © by (rasel X nadin<3)", "Desktop", '10.0']
 let authFile = `${opts._[0] || 'session'}.data.json`
 if (fs.existsSync(authFile)) conn.loadAuthInfo(authFile)
 if (opts['trace']) conn.logger.level = 'trace'
@@ -148,9 +149,9 @@ global.reloadHandler = function () {
     conn.off('group-update', conn.onGroupUpdate)
     conn.off('CB:action,,call', conn.onCall)
   }
-  conn.welcome = 'Hai @user,\nSelamat Datang Di grup @subject\nBagaimana kabarmu?'
+  conn.welcome = 'Hai @user,\nSelamat Datang Di grup\n@subject\n\nJangan Lupa Intro Ya\n\nNama:\nUmur:\nGender:\nStatus:\n\nSemoga betah ya🤗'
   conn.bye = 'Selamat tinggal @user\nJasamu akan kami kubur dalam²\n\ntapi boong\nkalo balik lagi nitip seblak ya 🤗'
-  conn.spromote = '@user sekarang admin'
+  conn.spromote = '@user sekarang adalah admin'
   conn.sdemote = '@user sekarang bukan admin'
   conn.handler = handler.handler
   conn.onDelete = handler.delete
