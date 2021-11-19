@@ -5,16 +5,16 @@ let handler = async(m, { conn }) => {
 ┃
 ┃ *SEWA BOT : ↷↷*
 ┃ 
-┃ *⸙ ુོ➪ Apa saja keuntungan premium?
-┃ *〲 ✅Dapatkan fitur khusus premium.
-┃ *〲 ✅Masukkan bot ke group anda.
-┃ *〲 ✅Limit UNLIMITED (Tidak Terbatas)
+┃ *⸙ ુོ➪ Keuntungan premium?
+┃ *〲 ✅Dapatkan fitur premium.
+┃ *〲 ✅Masukkan bot ke group.
+┃ *〲 ✅Limit UNLIMITED 
 ┃ *⸙ ુོ➪ Jadibot & Sewa RDP
 ┃ *〲 Bisa mengakses fitur owner:
-┃ *〲 1. Broadcast Bot 
-┃ *〲 2. Hidetag di grup
-┃ *〲 3. Run bot di RDP 24jam on
-┃ *〲 4. Bot fast respon
+┃ *〲 1. Broadcast Bot.
+┃ *〲 2. Hidetag di grup.
+┃ *〲 3. Run bot di RDP 24jam on.
+┃ *〲 4. Bot fast respon.
 ┃ *─★‧ﾟ
 ╰━━━━━━━━⸙
 Pembayaran via:
