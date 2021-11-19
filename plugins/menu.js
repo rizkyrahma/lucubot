@@ -28,7 +28,7 @@ const defaultMenu = {
   body: '⁙┃〲 %cmd %islimit %isPremium',
   footer: '⁙╰•°°°🕊°°°°°🕊°°°°°°🕊°°°°°°°°\n',
   after: `
-@%npmname^$%version
+@%npmname^%version
 ${'```%npmdesc```'}`,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
