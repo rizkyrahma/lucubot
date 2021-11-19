@@ -21,16 +21,15 @@ const defaultMenu = {
 ⁙┃〲
 ⁙┃〲 Uptime: *%uptime (%muptime)*
 ⁙┃〲 Database: %rtotalreg dari %totalreg
-⁙┃〲 Github Owner:
-⁙┃〲 github.com/irwanx
+⁙┃〲 %github
 ⁙╰•°°°🕊°°°°°🕊°°°°°°🕊°°°°°°°°
 %readmore`.trimStart(),
   header: '╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮\n┃╭┈─────────────⩵꙰ཱི࿐\n┃╰── %category ──➤ ↶↷\n╰•͙✩̣̣̣̣ ',
   body: '⁙┃〲 %cmd %islimit %isPremium',
   footer: '⁙╰•°°°🕊°°°°°🕊°°°°°°🕊°°°°°°°°\n',
   after: `
-${'```%npmdesc```'}
-`,
+@${npmname}^${version}
+${'```%npmdesc```'}`,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
