@@ -15,7 +15,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
   user.regTime = + new Date
   user.registered = true
   let sn = createHash('md5').update(m.sender).digest('hex')
-  m.reply(m.sender, sn)`
+  m.reply m.sender(`
 Daftar berhasil!
 
 ╭━━•✵ ⃟  ⃟  ⃟✵•
