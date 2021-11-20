@@ -5,7 +5,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
     let [_, code] = text.match(linkRegex) || []
     if (!code) throw 'Link Salah'
     let res = await conn.acceptInvite(code)
-    m.reply(`Berhasil join grup ${res.gid}`).then(() => {
+    m.reply(`Berhasil join grup ${res.gid} *BOT OUT AKAN 2JAM 25MENIT*`).then(() => {
         var jumlahHari = 86400000 * 0.1
         var now = new Date() * 1
         if (now < global.db.data.chats[res.gid].expired) global.db.data.chats[res.gid].expired += jumlahHari
@@ -22,9 +22,9 @@ ketik *#menu* untuk melihat daftar perintah`, MessageType.text, { contextInfo: {
 sourceUrl: 'https://wa.me/6285346545126?text=Assalamualaikum'
 }}})
 }
-handler.help = ['join1 <linkgrup> ']
+handler.help = ['join3 <linkgrup> ']
 handler.tags = ['main', 'update']
-handler.command = /^join1$/i
+handler.command = /^join3$/i
 
 handler.limit = 3
 
