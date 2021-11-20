@@ -148,8 +148,8 @@ global.reloadHandler = function () {
     conn.off('group-update', conn.onGroupUpdate)
     conn.off('CB:action,,call', conn.onCall)
   }
-  conn.welcome = 'Hai @user,\nSelamat Datang Di grup\n@subject\n\nJangan Lupa Intro Ya\n\nNama:\nUmur:\nGender:\nStatus:\n\nSemoga betah ya🤗'
-  conn.bye = 'Selamat tinggal @user\nJasamu akan kami kubur dalam²\n\ntapi boong\nkalo balik lagi nitip seblak ya 🤗'
+  conn.welcome = 'Hai @user,\nSelamat Datang Di grup\n@subject\n\nIntro Dulu\n\nNama:\nUmur:\nGender:\nStatus:\n\nSemoga betah yaa🤗'
+  conn.bye = 'Selamat tinggal @user\nJasamu akan kami kubur dalam²\n\ntapi boong\nkalo balik lagi nitip seblak yaa😚'
   conn.spromote = '@user sekarang adalah admin'
   conn.sdemote = '@user sekarang bukan admin'
   conn.handler = handler.handler
