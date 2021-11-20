@@ -5,7 +5,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
     let [_, code] = text.match(linkRegex) || []
     if (!code) throw 'Link Salah'
     let res = await conn.acceptInvite(code)
-    m.reply(`Berhasil join grup ${res.gid}`).then(() => {
+    m.reply(`Berhasil join grup ${res.gid} *BOT AKAN KELUAR DALAM WAKTU 24JAM*`).then(() => {
         var jumlahHari = 86400000 * 0.4
         var now = new Date() * 1
         if (now < global.db.data.chats[res.gid].expired) global.db.data.chats[res.gid].expired += jumlahHari
