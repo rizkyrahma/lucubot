@@ -43,7 +43,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'sticker': 'Stiker',
     'kerang': 'Kerang Ajaib',
     'quotes': 'Quotes',
-    'admin': 'Admin',
+    'admin': `Admin ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`,
     'group': 'Grup',
     'premium': 'Premium',
     'internet': 'Internet',
@@ -78,9 +78,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'quotes': 'Quotes'
   }
   if (teks == 'admin') tags = {
-    'admin': 'Admin'
-  }
-  if (teks == 'grup') tags = {
+    'admin': `Admin ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`,
     'group': 'Grup'
   }
   if (teks == 'premium') tags = {
@@ -223,13 +221,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "description": "",
                   "rowId": ".? quotes"
                 }, {
-                  "title": "Admin",
+                  "title": "Admin & Grup",
                   "description": "",
                   "rowId": ".? admin"
-                }, {
-                  "title": "Grup",
-                  "description": "",
-                  "rowId": ".? grup"
                 }, {
                   "title": "Premium",
                   "description": "",
