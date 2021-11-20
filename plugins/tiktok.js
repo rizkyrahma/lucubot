@@ -12,7 +12,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     })
     if (!json.status) throw global.eror
     await m.reply(global.wait)
-    await conn.sendFile(m.chat, json.data.videoHD, 'tiktok.mp4', watermark, {mimetype: 'video/gif'}, m)
+    await conn.sendFile(m.chat, json.data.videoHD, 'tiktok.mp4', watermark, m, 0, {mimetype: 'video/gif'})
 }
 handler.help = ['tiktok'].map(v => v + ' <url>')
 handler.tags = ['downloader']
