@@ -77,7 +77,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'quotes') tags = {
     'quotes': 'Quotes'
   }
-  if (teks == 'admin') tags = {
+  if (teks == 'admingrup') tags = {
     'admin': `Admin ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`,
     'group': 'Grup'
   }
