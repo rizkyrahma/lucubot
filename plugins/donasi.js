@@ -2,13 +2,11 @@ let fetch = require('node-fetch')
 let handler = async (m, { conn }) => await conn.send2ButtonLoc(m.chat, await (await fetch(yamete)).buffer(), `
 ╭━━•›ꪶ ۪۪⸙ ━ ━ ━ ━ ꪶ ۪۪⸙‹•━━╮ 
 ┃╭┈─────────────⩵꙰ཱི࿐ 
-┃╰──*DONATE*──➤ ↶↷* 
+┃╰── *DONATE* ──➤ ↶↷* 
 ╰•͙✩̣̣
-⁙┃ *⸙ ુོ➪ *VIA EMONEY*
+⁙┃ *⸙ ુོ➪ *EMONEY*
 ⁙┃ ુོ DANA   : 6285346545126
 ⁙┃ ુོ OVO      : 6285346545126
-⁙┃ ુོ GOPAY : 6285346545126
-⁙┃ ુོ PULSA : 6285346545126
 ⁙┃ ુོ saweria.co/raselganz
 ⁙┃ ુོ trakteer.id/raselganz/tip
 ⁙┃ ુོ
