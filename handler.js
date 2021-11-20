@@ -385,6 +385,7 @@ module.exports = {
           let groupMetadata = await this.groupMetadata(jid)
           for (let user of participants) {
             let pp = global.ppkosong
+            let ppgc = global.ppgc
             try {
               pp = await uploadImage(await (await fetch(await this.getProfilePicture(user))).buffer())
               ppgc = await uploadImage(await (await fetch(await this.getProfilePicture(jid))).buffer())
