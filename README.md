@@ -4,7 +4,7 @@
 <h1 align="center">LUCUBOT</h1>
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/raselcomel/stikerinbot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/raselcomel/lucubot)
 
 ------------
 ## NOTE INI SC GUA CUMA RECODE DIKIT
