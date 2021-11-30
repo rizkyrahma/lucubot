@@ -21,6 +21,7 @@ const defaultMenu = {
 ⁙┃〲
 ⁙┃〲 Uptime: *%uptime (%muptime)*
 ⁙┃〲 Database: %rtotalreg dari %totalreg
+⁙┃〲 Github:
 ⁙┃〲 %github
 ⁙╰•°°°🕊°°°°°🕊°°°°°°🕊°°°°°°°°
 %readmore`.trimStart(),
