@@ -5,7 +5,7 @@
 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/raselcomel/lucubot)
-## This repository not support termux:(
+## This repository doesn't support termux:(
 ------------
 ## NOTE INI SC GUA CUMA RECODE DIKIT
 ## TIDAK BERMAKSUD MENGAKUI HAK CIPTA
