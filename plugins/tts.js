@@ -17,7 +17,7 @@ let handler = async (m, { usedPrefix, command, conn, args }) => {
     m.reply(eror)
     res = await tts(text)
   } finally {
-    conn.sendFile(m.chat, res, 'tts.opus', null, m, true)
+    conn.sendFile(m.chat, res, 'tts.opus', null, m, true) //maap bang saia terlalu kreatif😂🙏
   }
 }
 handler.help = ['tts <lang> <teks>']
