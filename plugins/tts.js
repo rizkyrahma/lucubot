@@ -14,10 +14,10 @@ let handler = async (m, { usedPrefix, command, conn, args }) => {
   let res
   try { res = await tts(text, lang) }
   catch (e) {
-    m.reply(e + '')
+    m.reply(eror)
     res = await tts(text)
   } finally {
-    //conn.sendFile(m.chat, res, 'tts.opus', null, m, true)
+    conn.sendFile(m.chat, res, 'tts.opus', null, m, true)
   }
 }
 handler.help = ['tts <lang> <teks>']
