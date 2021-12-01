@@ -1,3 +1,8 @@
+##DATABASE
+This data are from scraper<p>
+
+![](https://visitor-badge.glitch.me/badge?page_id=raselcomel/lucubot)
+
 <p align="center">
 	<img src="https://telegra.ph/file/4f4a5a3cde6a98a96da79.jpg" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
