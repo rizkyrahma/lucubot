@@ -18,7 +18,7 @@ ketik *#menu* untuk melihat daftar perintah`, MessageType.text, { contextInfo: {
        mediaType: 4,
        title: 'rasel ×͜×',
        body: 'Whatsapp Developer Bot',
-       thumbnailUrl: image,
+       thumbnailUrl: 'https://telegra.ph/file/c9a5e49b5336604baa137.jpg',
 sourceUrl: 'https://wa.me/6285346545126?text=Assalamualaikum'
 }}})
 }
