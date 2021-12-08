@@ -53,7 +53,7 @@ global.ttq = `Thanks to:
 •Nurutomo
 •Ariffb
 •IrwanX
-•Rasel (owner) 
+•Rasel (devloper) 
 •Nadin
 •Aca Mirabel
 •Penyedia Layanan API
@@ -69,11 +69,11 @@ Price:
 Untuk 1 group
 
 Nb:bot ini masih terus dikembangkan.`
-global.ppkosong = 'https://telegra.ph/file/22fd84e4a3244e1b17e4e.png'
-global.ppgc = 'https://telegra.ph/file/22fd84e4a3244e1b17e4e.png'
-global.image = 'https://telegra.ph/file/c9a5e49b5336604baa137.jpg'//change the image
-global.thumbfoto = 'https://telegra.ph/file/c9a5e49b5336604baa137.jpg' //thumbnail foto tools
-global.yamete = 'https://telegra.ph/file/f7b13f18a1f21e5ca6aed.jpg' //qr
+global.ppkosong = 'https://telegra.ph/file/22fd84e4a3244e1b17e4e.png'//don't change 
+global.ppgc = 'https://telegra.ph/file/22fd84e4a3244e1b17e4e.png'//don't change 
+global.image = 'https://telegra.ph/file/c9a5e49b5336604baa137.jpg'//change image
+global.thumbfoto = 'https://telegra.ph/file/c9a5e49b5336604baa137.jpg' //change thumbnail foto tools
+global.yamete = 'https://telegra.ph/file/f7b13f18a1f21e5ca6aed.jpg' //change qr donate
 global.sumberurl = 'https://instagram.com/rasel.ganz'
 global.deskripsiurl = 'Saya adalah Bot WhatsApp ×͜×.'
 
