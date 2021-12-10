@@ -1,22 +1,21 @@
-FROM nikolaik/python-nodejs:latest
+FROM node:lts-buster
 
-RUN apt update -y
-RUN apt upgrade -y
-RUN apt-get install -y --no-install-recommends \
-  neofetch \
+RUN apt-get update && \
+  apt-get install -y \
   ffmpeg \
-  wget \
-  sudo \
-  tesseract-ocr \
-  chromium \
-  imagemagick
-RUN pip install pillow
+  imagemagick \
+  webp && \
+  apt-get upgrade -y && \
+  rm -rf /var/src/apt/lists/*
 
-RUN npm install -g npm@latest
-RUN npm install -g forever@latest
-
-WORKDIR /home/frmdev/frmdev
 COPY package.json .
-RUN npm install
+RUN npm install ytdl-core@latest
+RUN npm install yt-search@latest
+RUN npm i @adiwajshing/baileys@latest 
+RUN npm update
+
 COPY . .
+
+EXPOSE 5000
+
 CMD ["node", "index.js"]
