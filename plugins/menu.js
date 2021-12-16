@@ -190,7 +190,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `${ucapan()}, ${name}`.trim(),
+          "title": `${ucapan()}, @${m.sender.split`@`[0]}`.trim(),
           "description": "Terimakasih Atas Kunjungan Anda\n\nJangan lupa jaga kesehatan ya...\n\nTetap patuhi prokes dan ikuti vaksinasi\nMari mendukung program pemerintah dalam menanggulangi COVID-19 di Indonesia🇲🇨\n\nAda keperluan dengan owner bot?\nketik *#report* [pesan kamu]",
           "buttonText": "Pilih Disini",
           "listType": "SINGLE_SELECT",
